@@ -18,130 +18,84 @@
     "href": "projects.html",
     "title": "DS250 Projects",
     "section": "",
-    "text": "Project 1\nProject 2\nProject 3\nProject 4\nProject 5",
-    "crumbs": [
-      "DS250 Projects"
-    ]
+    "text": "Project 1\nProject 2\nProject 3\nProject 4\nProject 5"
   },
   {
     "objectID": "projects.html#repo-for-all-my-projects",
     "href": "projects.html#repo-for-all-my-projects",
     "title": "DS250 Projects",
     "section": "",
-    "text": "Project 1\nProject 2\nProject 3\nProject 4\nProject 5",
-    "crumbs": [
-      "DS250 Projects"
-    ]
+    "text": "Project 1\nProject 2\nProject 3\nProject 4\nProject 5"
   },
   {
     "objectID": "Projects/project4.html",
     "href": "Projects/project4.html",
     "title": "Client Report - [Insert Project Title]",
     "section": "",
-    "text": "paste your elevator pitch here A SHORT (4-5 SENTENCES) PARAGRAPH THAT DESCRIBES KEY INSIGHTS TAKEN FROM METRICS IN THE PROJECT RESULTS THINK TOP OR MOST IMPORTANT RESULTS.\n\n\nRead and format project data\n# Include and execute your code here\ndf = pd.read_csv(\"https://github.com/byuidatascience/data4names/raw/master/data-raw/names_year/names_year.csv\")\n\n\nHighlight the Questions and Tasks",
-    "crumbs": [
-      "DS250 Projects",
-      "Project 4"
-    ]
+    "text": "paste your elevator pitch here A SHORT (4-5 SENTENCES) PARAGRAPH THAT DESCRIBES KEY INSIGHTS TAKEN FROM METRICS IN THE PROJECT RESULTS THINK TOP OR MOST IMPORTANT RESULTS.\n\n\nRead and format project data\n# Include and execute your code here\ndf = pd.read_csv(\"https://github.com/byuidatascience/data4names/raw/master/data-raw/names_year/names_year.csv\")\n\n\nHighlight the Questions and Tasks"
   },
   {
     "objectID": "Projects/project4.html#elevator-pitch",
     "href": "Projects/project4.html#elevator-pitch",
     "title": "Client Report - [Insert Project Title]",
     "section": "",
-    "text": "paste your elevator pitch here A SHORT (4-5 SENTENCES) PARAGRAPH THAT DESCRIBES KEY INSIGHTS TAKEN FROM METRICS IN THE PROJECT RESULTS THINK TOP OR MOST IMPORTANT RESULTS.\n\n\nRead and format project data\n# Include and execute your code here\ndf = pd.read_csv(\"https://github.com/byuidatascience/data4names/raw/master/data-raw/names_year/names_year.csv\")\n\n\nHighlight the Questions and Tasks",
-    "crumbs": [
-      "DS250 Projects",
-      "Project 4"
-    ]
+    "text": "paste your elevator pitch here A SHORT (4-5 SENTENCES) PARAGRAPH THAT DESCRIBES KEY INSIGHTS TAKEN FROM METRICS IN THE PROJECT RESULTS THINK TOP OR MOST IMPORTANT RESULTS.\n\n\nRead and format project data\n# Include and execute your code here\ndf = pd.read_csv(\"https://github.com/byuidatascience/data4names/raw/master/data-raw/names_year/names_year.csv\")\n\n\nHighlight the Questions and Tasks"
   },
   {
     "objectID": "Projects/project4.html#questiontask-1",
     "href": "Projects/project4.html#questiontask-1",
     "title": "Client Report - [Insert Project Title]",
     "section": "QUESTION|TASK 1",
-    "text": "QUESTION|TASK 1\nCOPY PASTE QUESTION|TASK 1 FROM THE PROJECT HERE\ntype your results and analysis here\n\n\nRead and format data\n# Include and execute your code here\n\n\ninclude figures in chunks and discuss your findings in the figure.\n::: {#cell-Q1 chart .cell execution_count=4}\n\nplot example\n# Include and execute your code here\nchart = px.bar(df.head(200),\n    x=\"name\", \n    y=\"AK\"\n)\nchart.show()\n\n\n                                                \nMy useless chart\n\n:::\n::: {#cell-Q1 table .cell .tbl-cap-location-top tbl-cap=‘Not much of a table’ execution_count=5}\n\ntable example\n# Include and execute your code here\nmydat = df.head(1000)\\\n    .groupby('year')\\\n    .sum()\\\n    .reset_index()\\\n    .tail(10)\\\n    .filter([\"year\", \"AK\",\"AR\"])\n\ndisplay(mydat)\n\n\n\n\n\n\n\n\n\nyear\nAK\nAR\n\n\n\n\n96\n2006\n21.0\n183.0\n\n\n97\n2007\n28.0\n153.0\n\n\n98\n2008\n36.0\n212.0\n\n\n99\n2009\n34.0\n179.0\n\n\n100\n2010\n22.0\n196.0\n\n\n101\n2011\n41.0\n148.0\n\n\n102\n2012\n28.0\n140.0\n\n\n103\n2013\n26.0\n134.0\n\n\n104\n2014\n20.0\n114.0\n\n\n105\n2015\n28.0\n121.0\n\n\n\n\n\n\n:::",
-    "crumbs": [
-      "DS250 Projects",
-      "Project 4"
-    ]
+    "text": "QUESTION|TASK 1\nCOPY PASTE QUESTION|TASK 1 FROM THE PROJECT HERE\ntype your results and analysis here\n\n\nRead and format data\n# Include and execute your code here\n\n\ninclude figures in chunks and discuss your findings in the figure.\n\n\nplot example\n# Include and execute your code here\nchart = px.bar(df.head(200),\n    x=\"name\", \n    y=\"AK\"\n)\nchart.show()\n\n\n\n                                                \nMy useless chart\n\n\n\n\ntable example\n# Include and execute your code here\nmydat = df.head(1000)\\\n    .groupby('year')\\\n    .sum()\\\n    .reset_index()\\\n    .tail(10)\\\n    .filter([\"year\", \"AK\",\"AR\"])\n\ndisplay(mydat)\n\n\n\n\n\n\nNot much of a table \n\n\n\nyear\nAK\nAR\n\n\n\n\n96\n2006\n21.0\n183.0\n\n\n97\n2007\n28.0\n153.0\n\n\n98\n2008\n36.0\n212.0\n\n\n99\n2009\n34.0\n179.0\n\n\n100\n2010\n22.0\n196.0\n\n\n101\n2011\n41.0\n148.0\n\n\n102\n2012\n28.0\n140.0\n\n\n103\n2013\n26.0\n134.0\n\n\n104\n2014\n20.0\n114.0\n\n\n105\n2015\n28.0\n121.0"
   },
   {
     "objectID": "Projects/project4.html#questiontask-2",
     "href": "Projects/project4.html#questiontask-2",
     "title": "Client Report - [Insert Project Title]",
     "section": "QUESTION|TASK 2",
-    "text": "QUESTION|TASK 2\nCOPY PASTE QUESTION|TASK 2 FROM THE PROJECT HERE\ntype your results and analysis here\n\n\nRead and format data\n# Include and execute your code here\n\n\ninclude figures in chunks and discuss your findings in the figure.\n::: {#cell-Q2 chart .cell execution_count=7}\n\nplot example\n# Include and execute your code here\nchart = px.bar(df.head(200),\n    x=\"name\", \n    y=\"AK\"\n)\nchart.show()\n\n\n                                                \nMy useless chart\n\n:::\n::: {#cell-Q2 table .cell .tbl-cap-location-top tbl-cap=‘Not much of a table’ execution_count=8}\n\ntable example\n# Include and execute your code here\nmydat = df.head(1000)\\\n    .groupby('year')\\\n    .sum()\\\n    .reset_index()\\\n    .tail(10)\\\n    .filter([\"year\", \"AK\",\"AR\"])\n\ndisplay(mydat)\n\n\n\n\n\n\n\n\n\nyear\nAK\nAR\n\n\n\n\n96\n2006\n21.0\n183.0\n\n\n97\n2007\n28.0\n153.0\n\n\n98\n2008\n36.0\n212.0\n\n\n99\n2009\n34.0\n179.0\n\n\n100\n2010\n22.0\n196.0\n\n\n101\n2011\n41.0\n148.0\n\n\n102\n2012\n28.0\n140.0\n\n\n103\n2013\n26.0\n134.0\n\n\n104\n2014\n20.0\n114.0\n\n\n105\n2015\n28.0\n121.0\n\n\n\n\n\n\n:::",
-    "crumbs": [
-      "DS250 Projects",
-      "Project 4"
-    ]
+    "text": "QUESTION|TASK 2\nCOPY PASTE QUESTION|TASK 2 FROM THE PROJECT HERE\ntype your results and analysis here\n\n\nRead and format data\n# Include and execute your code here\n\n\ninclude figures in chunks and discuss your findings in the figure.\n\n\nplot example\n# Include and execute your code here\nchart = px.bar(df.head(200),\n    x=\"name\", \n    y=\"AK\"\n)\nchart.show()\n\n\n\n                                                \nMy useless chart\n\n\n\n\ntable example\n# Include and execute your code here\nmydat = df.head(1000)\\\n    .groupby('year')\\\n    .sum()\\\n    .reset_index()\\\n    .tail(10)\\\n    .filter([\"year\", \"AK\",\"AR\"])\n\ndisplay(mydat)\n\n\n\n\n\n\nNot much of a table \n\n\n\nyear\nAK\nAR\n\n\n\n\n96\n2006\n21.0\n183.0\n\n\n97\n2007\n28.0\n153.0\n\n\n98\n2008\n36.0\n212.0\n\n\n99\n2009\n34.0\n179.0\n\n\n100\n2010\n22.0\n196.0\n\n\n101\n2011\n41.0\n148.0\n\n\n102\n2012\n28.0\n140.0\n\n\n103\n2013\n26.0\n134.0\n\n\n104\n2014\n20.0\n114.0\n\n\n105\n2015\n28.0\n121.0"
   },
   {
     "objectID": "Projects/project4.html#questiontask-3",
     "href": "Projects/project4.html#questiontask-3",
     "title": "Client Report - [Insert Project Title]",
     "section": "QUESTION|TASK 3",
-    "text": "QUESTION|TASK 3\nCOPY PASTE QUESTION|TASK 3 FROM THE PROJECT HERE\ntype your results and analysis here\n\n\nRead and format data\n# Include and execute your code here\n\n\ninclude figures in chunks and discuss your findings in the figure.\n::: {#cell-Q3 chart .cell execution_count=10}\n\nplot example\n# Include and execute your code here\nchart = px.bar(df.head(200),\n    x=\"name\", \n    y=\"AK\"\n)\nchart.show()\n\n\n                                                \nMy useless chart\n\n:::\n::: {#cell-Q3 table .cell .tbl-cap-location-top tbl-cap=‘Not much of a table’ execution_count=11}\n\ntable example\n# Include and execute your code here\nmydat = df.head(1000)\\\n    .groupby('year')\\\n    .sum()\\\n    .reset_index()\\\n    .tail(10)\\\n    .filter([\"year\", \"AK\",\"AR\"])\n\ndisplay(mydat)\n\n\n\n\n\n\n\n\n\nyear\nAK\nAR\n\n\n\n\n96\n2006\n21.0\n183.0\n\n\n97\n2007\n28.0\n153.0\n\n\n98\n2008\n36.0\n212.0\n\n\n99\n2009\n34.0\n179.0\n\n\n100\n2010\n22.0\n196.0\n\n\n101\n2011\n41.0\n148.0\n\n\n102\n2012\n28.0\n140.0\n\n\n103\n2013\n26.0\n134.0\n\n\n104\n2014\n20.0\n114.0\n\n\n105\n2015\n28.0\n121.0\n\n\n\n\n\n\n:::",
-    "crumbs": [
-      "DS250 Projects",
-      "Project 4"
-    ]
+    "text": "QUESTION|TASK 3\nCOPY PASTE QUESTION|TASK 3 FROM THE PROJECT HERE\ntype your results and analysis here\n\n\nRead and format data\n# Include and execute your code here\n\n\ninclude figures in chunks and discuss your findings in the figure.\n\n\nplot example\n# Include and execute your code here\nchart = px.bar(df.head(200),\n    x=\"name\", \n    y=\"AK\"\n)\nchart.show()\n\n\n\n                                                \nMy useless chart\n\n\n\n\ntable example\n# Include and execute your code here\nmydat = df.head(1000)\\\n    .groupby('year')\\\n    .sum()\\\n    .reset_index()\\\n    .tail(10)\\\n    .filter([\"year\", \"AK\",\"AR\"])\n\ndisplay(mydat)\n\n\n\n\n\n\nNot much of a table \n\n\n\nyear\nAK\nAR\n\n\n\n\n96\n2006\n21.0\n183.0\n\n\n97\n2007\n28.0\n153.0\n\n\n98\n2008\n36.0\n212.0\n\n\n99\n2009\n34.0\n179.0\n\n\n100\n2010\n22.0\n196.0\n\n\n101\n2011\n41.0\n148.0\n\n\n102\n2012\n28.0\n140.0\n\n\n103\n2013\n26.0\n134.0\n\n\n104\n2014\n20.0\n114.0\n\n\n105\n2015\n28.0\n121.0"
   },
   {
     "objectID": "Projects/project2.html",
     "href": "Projects/project2.html",
     "title": "Client Report - [Insert Project Title]",
     "section": "",
-    "text": "paste your elevator pitch here A SHORT (4-5 SENTENCES) PARAGRAPH THAT DESCRIBES KEY INSIGHTS TAKEN FROM METRICS IN THE PROJECT RESULTS THINK TOP OR MOST IMPORTANT RESULTS.\n\n\nRead and format project data\n# Include and execute your code here\ndf = pd.read_csv(\"https://github.com/byuidatascience/data4names/raw/master/data-raw/names_year/names_year.csv\")\n\n\nHighlight the Questions and Tasks",
-    "crumbs": [
-      "DS250 Projects",
-      "Project 2"
-    ]
+    "text": "paste your elevator pitch here A SHORT (4-5 SENTENCES) PARAGRAPH THAT DESCRIBES KEY INSIGHTS TAKEN FROM METRICS IN THE PROJECT RESULTS THINK TOP OR MOST IMPORTANT RESULTS.\n\n\nRead and format project data\n# Include and execute your code here\ndf = pd.read_csv(\"https://github.com/byuidatascience/data4names/raw/master/data-raw/names_year/names_year.csv\")\n\n\nHighlight the Questions and Tasks"
   },
   {
     "objectID": "Projects/project2.html#elevator-pitch",
     "href": "Projects/project2.html#elevator-pitch",
     "title": "Client Report - [Insert Project Title]",
     "section": "",
-    "text": "paste your elevator pitch here A SHORT (4-5 SENTENCES) PARAGRAPH THAT DESCRIBES KEY INSIGHTS TAKEN FROM METRICS IN THE PROJECT RESULTS THINK TOP OR MOST IMPORTANT RESULTS.\n\n\nRead and format project data\n# Include and execute your code here\ndf = pd.read_csv(\"https://github.com/byuidatascience/data4names/raw/master/data-raw/names_year/names_year.csv\")\n\n\nHighlight the Questions and Tasks",
-    "crumbs": [
-      "DS250 Projects",
-      "Project 2"
-    ]
+    "text": "paste your elevator pitch here A SHORT (4-5 SENTENCES) PARAGRAPH THAT DESCRIBES KEY INSIGHTS TAKEN FROM METRICS IN THE PROJECT RESULTS THINK TOP OR MOST IMPORTANT RESULTS.\n\n\nRead and format project data\n# Include and execute your code here\ndf = pd.read_csv(\"https://github.com/byuidatascience/data4names/raw/master/data-raw/names_year/names_year.csv\")\n\n\nHighlight the Questions and Tasks"
   },
   {
     "objectID": "Projects/project2.html#questiontask-1",
     "href": "Projects/project2.html#questiontask-1",
     "title": "Client Report - [Insert Project Title]",
     "section": "QUESTION|TASK 1",
-    "text": "QUESTION|TASK 1\nCOPY PASTE QUESTION|TASK 1 FROM THE PROJECT HERE\ntype your results and analysis here\n\n\nRead and format data\n# Include and execute your code here\n\n\ninclude figures in chunks and discuss your findings in the figure.\n::: {#cell-Q1 chart .cell execution_count=4}\n\nplot example\n# Include and execute your code here\nchart = px.bar(df.head(200),\n    x=\"name\", \n    y=\"AK\"\n)\nchart.show()\n\n\n                                                \nMy useless chart\n\n:::\n::: {#cell-Q1 table .cell .tbl-cap-location-top tbl-cap=‘Not much of a table’ execution_count=5}\n\ntable example\n# Include and execute your code here\nmydat = df.head(1000)\\\n    .groupby('year')\\\n    .sum()\\\n    .reset_index()\\\n    .tail(10)\\\n    .filter([\"year\", \"AK\",\"AR\"])\n\ndisplay(mydat)\n\n\n\n\n\n\n\n\n\nyear\nAK\nAR\n\n\n\n\n96\n2006\n21.0\n183.0\n\n\n97\n2007\n28.0\n153.0\n\n\n98\n2008\n36.0\n212.0\n\n\n99\n2009\n34.0\n179.0\n\n\n100\n2010\n22.0\n196.0\n\n\n101\n2011\n41.0\n148.0\n\n\n102\n2012\n28.0\n140.0\n\n\n103\n2013\n26.0\n134.0\n\n\n104\n2014\n20.0\n114.0\n\n\n105\n2015\n28.0\n121.0\n\n\n\n\n\n\n:::",
-    "crumbs": [
-      "DS250 Projects",
-      "Project 2"
-    ]
+    "text": "QUESTION|TASK 1\nCOPY PASTE QUESTION|TASK 1 FROM THE PROJECT HERE\ntype your results and analysis here\n\n\nRead and format data\n# Include and execute your code here\n\n\ninclude figures in chunks and discuss your findings in the figure.\n\n\nplot example\n# Include and execute your code here\nchart = px.bar(df.head(200),\n    x=\"name\", \n    y=\"AK\"\n)\nchart.show()\n\n\n\n                                                \nMy useless chart\n\n\n\n\ntable example\n# Include and execute your code here\nmydat = df.head(1000)\\\n    .groupby('year')\\\n    .sum()\\\n    .reset_index()\\\n    .tail(10)\\\n    .filter([\"year\", \"AK\",\"AR\"])\n\ndisplay(mydat)\n\n\n\n\n\n\nNot much of a table \n\n\n\nyear\nAK\nAR\n\n\n\n\n96\n2006\n21.0\n183.0\n\n\n97\n2007\n28.0\n153.0\n\n\n98\n2008\n36.0\n212.0\n\n\n99\n2009\n34.0\n179.0\n\n\n100\n2010\n22.0\n196.0\n\n\n101\n2011\n41.0\n148.0\n\n\n102\n2012\n28.0\n140.0\n\n\n103\n2013\n26.0\n134.0\n\n\n104\n2014\n20.0\n114.0\n\n\n105\n2015\n28.0\n121.0"
   },
   {
     "objectID": "Projects/project2.html#questiontask-2",
     "href": "Projects/project2.html#questiontask-2",
     "title": "Client Report - [Insert Project Title]",
     "section": "QUESTION|TASK 2",
-    "text": "QUESTION|TASK 2\nCOPY PASTE QUESTION|TASK 2 FROM THE PROJECT HERE\ntype your results and analysis here\n\n\nRead and format data\n# Include and execute your code here\n\n\ninclude figures in chunks and discuss your findings in the figure.\n::: {#cell-Q2 chart .cell execution_count=7}\n\nplot example\n# Include and execute your code here\nchart = px.bar(df.head(200),\n    x=\"name\", \n    y=\"AK\"\n)\nchart.show()\n\n\n                                                \nMy useless chart\n\n:::\n::: {#cell-Q2 table .cell .tbl-cap-location-top tbl-cap=‘Not much of a table’ execution_count=8}\n\ntable example\n# Include and execute your code here\nmydat = df.head(1000)\\\n    .groupby('year')\\\n    .sum()\\\n    .reset_index()\\\n    .tail(10)\\\n    .filter([\"year\", \"AK\",\"AR\"])\n\ndisplay(mydat)\n\n\n\n\n\n\n\n\n\nyear\nAK\nAR\n\n\n\n\n96\n2006\n21.0\n183.0\n\n\n97\n2007\n28.0\n153.0\n\n\n98\n2008\n36.0\n212.0\n\n\n99\n2009\n34.0\n179.0\n\n\n100\n2010\n22.0\n196.0\n\n\n101\n2011\n41.0\n148.0\n\n\n102\n2012\n28.0\n140.0\n\n\n103\n2013\n26.0\n134.0\n\n\n104\n2014\n20.0\n114.0\n\n\n105\n2015\n28.0\n121.0\n\n\n\n\n\n\n:::",
-    "crumbs": [
-      "DS250 Projects",
-      "Project 2"
-    ]
+    "text": "QUESTION|TASK 2\nCOPY PASTE QUESTION|TASK 2 FROM THE PROJECT HERE\ntype your results and analysis here\n\n\nRead and format data\n# Include and execute your code here\n\n\ninclude figures in chunks and discuss your findings in the figure.\n\n\nplot example\n# Include and execute your code here\nchart = px.bar(df.head(200),\n    x=\"name\", \n    y=\"AK\"\n)\nchart.show()\n\n\n\n                                                \nMy useless chart\n\n\n\n\ntable example\n# Include and execute your code here\nmydat = df.head(1000)\\\n    .groupby('year')\\\n    .sum()\\\n    .reset_index()\\\n    .tail(10)\\\n    .filter([\"year\", \"AK\",\"AR\"])\n\ndisplay(mydat)\n\n\n\n\n\n\nNot much of a table \n\n\n\nyear\nAK\nAR\n\n\n\n\n96\n2006\n21.0\n183.0\n\n\n97\n2007\n28.0\n153.0\n\n\n98\n2008\n36.0\n212.0\n\n\n99\n2009\n34.0\n179.0\n\n\n100\n2010\n22.0\n196.0\n\n\n101\n2011\n41.0\n148.0\n\n\n102\n2012\n28.0\n140.0\n\n\n103\n2013\n26.0\n134.0\n\n\n104\n2014\n20.0\n114.0\n\n\n105\n2015\n28.0\n121.0"
   },
   {
     "objectID": "Projects/project2.html#questiontask-3",
     "href": "Projects/project2.html#questiontask-3",
     "title": "Client Report - [Insert Project Title]",
     "section": "QUESTION|TASK 3",
-    "text": "QUESTION|TASK 3\nCOPY PASTE QUESTION|TASK 3 FROM THE PROJECT HERE\ntype your results and analysis here\n\n\nRead and format data\n# Include and execute your code here\n\n\ninclude figures in chunks and discuss your findings in the figure.\n::: {#cell-Q3 chart .cell execution_count=10}\n\nplot example\n# Include and execute your code here\nchart = px.bar(df.head(200),\n    x=\"name\", \n    y=\"AK\"\n)\nchart.show()\n\n\n                                                \nMy useless chart\n\n:::\n::: {#cell-Q3 table .cell .tbl-cap-location-top tbl-cap=‘Not much of a table’ execution_count=11}\n\ntable example\n# Include and execute your code here\nmydat = df.head(1000)\\\n    .groupby('year')\\\n    .sum()\\\n    .reset_index()\\\n    .tail(10)\\\n    .filter([\"year\", \"AK\",\"AR\"])\n\ndisplay(mydat)\n\n\n\n\n\n\n\n\n\nyear\nAK\nAR\n\n\n\n\n96\n2006\n21.0\n183.0\n\n\n97\n2007\n28.0\n153.0\n\n\n98\n2008\n36.0\n212.0\n\n\n99\n2009\n34.0\n179.0\n\n\n100\n2010\n22.0\n196.0\n\n\n101\n2011\n41.0\n148.0\n\n\n102\n2012\n28.0\n140.0\n\n\n103\n2013\n26.0\n134.0\n\n\n104\n2014\n20.0\n114.0\n\n\n105\n2015\n28.0\n121.0\n\n\n\n\n\n\n:::",
-    "crumbs": [
-      "DS250 Projects",
-      "Project 2"
-    ]
+    "text": "QUESTION|TASK 3\nCOPY PASTE QUESTION|TASK 3 FROM THE PROJECT HERE\ntype your results and analysis here\n\n\nRead and format data\n# Include and execute your code here\n\n\ninclude figures in chunks and discuss your findings in the figure.\n\n\nplot example\n# Include and execute your code here\nchart = px.bar(df.head(200),\n    x=\"name\", \n    y=\"AK\"\n)\nchart.show()\n\n\n\n                                                \nMy useless chart\n\n\n\n\ntable example\n# Include and execute your code here\nmydat = df.head(1000)\\\n    .groupby('year')\\\n    .sum()\\\n    .reset_index()\\\n    .tail(10)\\\n    .filter([\"year\", \"AK\",\"AR\"])\n\ndisplay(mydat)\n\n\n\n\n\n\nNot much of a table \n\n\n\nyear\nAK\nAR\n\n\n\n\n96\n2006\n21.0\n183.0\n\n\n97\n2007\n28.0\n153.0\n\n\n98\n2008\n36.0\n212.0\n\n\n99\n2009\n34.0\n179.0\n\n\n100\n2010\n22.0\n196.0\n\n\n101\n2011\n41.0\n148.0\n\n\n102\n2012\n28.0\n140.0\n\n\n103\n2013\n26.0\n134.0\n\n\n104\n2014\n20.0\n114.0\n\n\n105\n2015\n28.0\n121.0"
   },
   {
     "objectID": "ml.html",
@@ -232,165 +186,112 @@
     "href": "Projects/project1.html",
     "title": "Client Report - What’s in a name?",
     "section": "",
-    "text": "paste your elevator pitch here A SHORT (4-5 SENTENCES) PARAGRAPH THAT DESCRIBES KEY INSIGHTS TAKEN FROM METRICS IN THE PROJECT RESULTS THINK TOP OR MOST IMPORTANT RESULTS.\n::: {#cell-project data .cell execution_count=2}\n\nRead and format project data\n# Include and execute your code here\ndf = pd.read_csv(\"https://raw.githubusercontent.com/byuidatascience/data4names/master/data-raw/names_year/names_year.csv\")\ndf\n\n\n\n\n\n\n\n\n\nname\nyear\nAK\nAL\nAR\nAZ\nCA\nCO\nCT\nDC\n...\nTN\nTX\nUT\nVA\nVT\nWA\nWI\nWV\nWY\nTotal\n\n\n\n\n0\nAaden\n2005\n0.0\n0.0\n0.0\n0.0\n0.0\n0.0\n0.0\n0.0\n...\n0.0\n0.0\n0.0\n0.0\n0.0\n0.0\n0.0\n0.0\n0.0\n5.0\n\n\n1\nAaden\n2007\n0.0\n5.0\n0.0\n5.0\n20.0\n6.0\n0.0\n0.0\n...\n5.0\n14.0\n0.0\n0.0\n0.0\n0.0\n0.0\n0.0\n0.0\n98.0\n\n\n2\nAaden\n2008\n0.0\n15.0\n13.0\n20.0\n135.0\n10.0\n9.0\n0.0\n...\n15.0\n99.0\n8.0\n26.0\n0.0\n11.0\n19.0\n5.0\n0.0\n939.0\n\n\n3\nAaden\n2009\n0.0\n28.0\n20.0\n23.0\n158.0\n22.0\n12.0\n0.0\n...\n33.0\n140.0\n6.0\n17.0\n0.0\n31.0\n23.0\n14.0\n0.0\n1242.0\n\n\n4\nAaden\n2010\n0.0\n8.0\n6.0\n12.0\n62.0\n9.0\n5.0\n0.0\n...\n9.0\n56.0\n0.0\n11.0\n0.0\n7.0\n12.0\n0.0\n0.0\n414.0\n\n\n...\n...\n...\n...\n...\n...\n...\n...\n...\n...\n...\n...\n...\n...\n...\n...\n...\n...\n...\n...\n...\n...\n\n\n393379\nZyon\n2011\n0.0\n0.0\n0.0\n6.0\n0.0\n0.0\n0.0\n0.0\n...\n5.0\n9.0\n0.0\n8.0\n0.0\n0.0\n0.0\n0.0\n0.0\n117.0\n\n\n393380\nZyon\n2012\n0.0\n0.0\n0.0\n0.0\n5.0\n0.0\n0.0\n0.0\n...\n0.0\n7.5\n0.0\n12.0\n0.0\n0.0\n0.0\n0.0\n0.0\n118.5\n\n\n393381\nZyon\n2013\n0.0\n0.0\n0.0\n0.0\n6.0\n0.0\n0.0\n0.0\n...\n0.0\n5.0\n0.0\n0.0\n0.0\n0.0\n0.0\n0.0\n0.0\n93.0\n\n\n393382\nZyon\n2014\n0.0\n7.0\n0.0\n0.0\n0.0\n0.0\n0.0\n5.0\n...\n0.0\n7.0\n0.0\n9.0\n0.0\n0.0\n0.0\n0.0\n0.0\n73.0\n\n\n393383\nZyon\n2015\n0.0\n0.0\n0.0\n0.0\n7.0\n0.0\n0.0\n0.0\n...\n0.0\n10.0\n0.0\n8.0\n0.0\n0.0\n0.0\n0.0\n0.0\n87.5\n\n\n\n\n393384 rows × 54 columns\n\n\n:::\nHighlight the Questions and Tasks",
-    "crumbs": [
-      "DS250 Projects",
-      "Project 1"
-    ]
+    "text": "paste your elevator pitch here A SHORT (4-5 SENTENCES) PARAGRAPH THAT DESCRIBES KEY INSIGHTS TAKEN FROM METRICS IN THE PROJECT RESULTS THINK TOP OR MOST IMPORTANT RESULTS.\n\n\nRead and format project data\n# Include and execute your code here\ndf = pd.read_csv(\"https://raw.githubusercontent.com/byuidatascience/data4names/master/data-raw/names_year/names_year.csv\")\ndf\n\n\n\n\n\n\n\n\n\nname\nyear\nAK\nAL\nAR\nAZ\nCA\nCO\nCT\nDC\n...\nTN\nTX\nUT\nVA\nVT\nWA\nWI\nWV\nWY\nTotal\n\n\n\n\n0\nAaden\n2005\n0.0\n0.0\n0.0\n0.0\n0.0\n0.0\n0.0\n0.0\n...\n0.0\n0.0\n0.0\n0.0\n0.0\n0.0\n0.0\n0.0\n0.0\n5.0\n\n\n1\nAaden\n2007\n0.0\n5.0\n0.0\n5.0\n20.0\n6.0\n0.0\n0.0\n...\n5.0\n14.0\n0.0\n0.0\n0.0\n0.0\n0.0\n0.0\n0.0\n98.0\n\n\n2\nAaden\n2008\n0.0\n15.0\n13.0\n20.0\n135.0\n10.0\n9.0\n0.0\n...\n15.0\n99.0\n8.0\n26.0\n0.0\n11.0\n19.0\n5.0\n0.0\n939.0\n\n\n3\nAaden\n2009\n0.0\n28.0\n20.0\n23.0\n158.0\n22.0\n12.0\n0.0\n...\n33.0\n140.0\n6.0\n17.0\n0.0\n31.0\n23.0\n14.0\n0.0\n1242.0\n\n\n4\nAaden\n2010\n0.0\n8.0\n6.0\n12.0\n62.0\n9.0\n5.0\n0.0\n...\n9.0\n56.0\n0.0\n11.0\n0.0\n7.0\n12.0\n0.0\n0.0\n414.0\n\n\n...\n...\n...\n...\n...\n...\n...\n...\n...\n...\n...\n...\n...\n...\n...\n...\n...\n...\n...\n...\n...\n...\n\n\n393379\nZyon\n2011\n0.0\n0.0\n0.0\n6.0\n0.0\n0.0\n0.0\n0.0\n...\n5.0\n9.0\n0.0\n8.0\n0.0\n0.0\n0.0\n0.0\n0.0\n117.0\n\n\n393380\nZyon\n2012\n0.0\n0.0\n0.0\n0.0\n5.0\n0.0\n0.0\n0.0\n...\n0.0\n7.5\n0.0\n12.0\n0.0\n0.0\n0.0\n0.0\n0.0\n118.5\n\n\n393381\nZyon\n2013\n0.0\n0.0\n0.0\n0.0\n6.0\n0.0\n0.0\n0.0\n...\n0.0\n5.0\n0.0\n0.0\n0.0\n0.0\n0.0\n0.0\n0.0\n93.0\n\n\n393382\nZyon\n2014\n0.0\n7.0\n0.0\n0.0\n0.0\n0.0\n0.0\n5.0\n...\n0.0\n7.0\n0.0\n9.0\n0.0\n0.0\n0.0\n0.0\n0.0\n73.0\n\n\n393383\nZyon\n2015\n0.0\n0.0\n0.0\n0.0\n7.0\n0.0\n0.0\n0.0\n...\n0.0\n10.0\n0.0\n8.0\n0.0\n0.0\n0.0\n0.0\n0.0\n87.5\n\n\n\n\n393384 rows × 54 columns\n\n\n\nHighlight the Questions and Tasks"
   },
   {
     "objectID": "Projects/project1.html#elevator-pitch",
     "href": "Projects/project1.html#elevator-pitch",
     "title": "Client Report - What’s in a name?",
     "section": "",
-    "text": "paste your elevator pitch here A SHORT (4-5 SENTENCES) PARAGRAPH THAT DESCRIBES KEY INSIGHTS TAKEN FROM METRICS IN THE PROJECT RESULTS THINK TOP OR MOST IMPORTANT RESULTS.\n::: {#cell-project data .cell execution_count=2}\n\nRead and format project data\n# Include and execute your code here\ndf = pd.read_csv(\"https://raw.githubusercontent.com/byuidatascience/data4names/master/data-raw/names_year/names_year.csv\")\ndf\n\n\n\n\n\n\n\n\n\nname\nyear\nAK\nAL\nAR\nAZ\nCA\nCO\nCT\nDC\n...\nTN\nTX\nUT\nVA\nVT\nWA\nWI\nWV\nWY\nTotal\n\n\n\n\n0\nAaden\n2005\n0.0\n0.0\n0.0\n0.0\n0.0\n0.0\n0.0\n0.0\n...\n0.0\n0.0\n0.0\n0.0\n0.0\n0.0\n0.0\n0.0\n0.0\n5.0\n\n\n1\nAaden\n2007\n0.0\n5.0\n0.0\n5.0\n20.0\n6.0\n0.0\n0.0\n...\n5.0\n14.0\n0.0\n0.0\n0.0\n0.0\n0.0\n0.0\n0.0\n98.0\n\n\n2\nAaden\n2008\n0.0\n15.0\n13.0\n20.0\n135.0\n10.0\n9.0\n0.0\n...\n15.0\n99.0\n8.0\n26.0\n0.0\n11.0\n19.0\n5.0\n0.0\n939.0\n\n\n3\nAaden\n2009\n0.0\n28.0\n20.0\n23.0\n158.0\n22.0\n12.0\n0.0\n...\n33.0\n140.0\n6.0\n17.0\n0.0\n31.0\n23.0\n14.0\n0.0\n1242.0\n\n\n4\nAaden\n2010\n0.0\n8.0\n6.0\n12.0\n62.0\n9.0\n5.0\n0.0\n...\n9.0\n56.0\n0.0\n11.0\n0.0\n7.0\n12.0\n0.0\n0.0\n414.0\n\n\n...\n...\n...\n...\n...\n...\n...\n...\n...\n...\n...\n...\n...\n...\n...\n...\n...\n...\n...\n...\n...\n...\n\n\n393379\nZyon\n2011\n0.0\n0.0\n0.0\n6.0\n0.0\n0.0\n0.0\n0.0\n...\n5.0\n9.0\n0.0\n8.0\n0.0\n0.0\n0.0\n0.0\n0.0\n117.0\n\n\n393380\nZyon\n2012\n0.0\n0.0\n0.0\n0.0\n5.0\n0.0\n0.0\n0.0\n...\n0.0\n7.5\n0.0\n12.0\n0.0\n0.0\n0.0\n0.0\n0.0\n118.5\n\n\n393381\nZyon\n2013\n0.0\n0.0\n0.0\n0.0\n6.0\n0.0\n0.0\n0.0\n...\n0.0\n5.0\n0.0\n0.0\n0.0\n0.0\n0.0\n0.0\n0.0\n93.0\n\n\n393382\nZyon\n2014\n0.0\n7.0\n0.0\n0.0\n0.0\n0.0\n0.0\n5.0\n...\n0.0\n7.0\n0.0\n9.0\n0.0\n0.0\n0.0\n0.0\n0.0\n73.0\n\n\n393383\nZyon\n2015\n0.0\n0.0\n0.0\n0.0\n7.0\n0.0\n0.0\n0.0\n...\n0.0\n10.0\n0.0\n8.0\n0.0\n0.0\n0.0\n0.0\n0.0\n87.5\n\n\n\n\n393384 rows × 54 columns\n\n\n:::\nHighlight the Questions and Tasks",
-    "crumbs": [
-      "DS250 Projects",
-      "Project 1"
-    ]
+    "text": "paste your elevator pitch here A SHORT (4-5 SENTENCES) PARAGRAPH THAT DESCRIBES KEY INSIGHTS TAKEN FROM METRICS IN THE PROJECT RESULTS THINK TOP OR MOST IMPORTANT RESULTS.\n\n\nRead and format project data\n# Include and execute your code here\ndf = pd.read_csv(\"https://raw.githubusercontent.com/byuidatascience/data4names/master/data-raw/names_year/names_year.csv\")\ndf\n\n\n\n\n\n\n\n\n\nname\nyear\nAK\nAL\nAR\nAZ\nCA\nCO\nCT\nDC\n...\nTN\nTX\nUT\nVA\nVT\nWA\nWI\nWV\nWY\nTotal\n\n\n\n\n0\nAaden\n2005\n0.0\n0.0\n0.0\n0.0\n0.0\n0.0\n0.0\n0.0\n...\n0.0\n0.0\n0.0\n0.0\n0.0\n0.0\n0.0\n0.0\n0.0\n5.0\n\n\n1\nAaden\n2007\n0.0\n5.0\n0.0\n5.0\n20.0\n6.0\n0.0\n0.0\n...\n5.0\n14.0\n0.0\n0.0\n0.0\n0.0\n0.0\n0.0\n0.0\n98.0\n\n\n2\nAaden\n2008\n0.0\n15.0\n13.0\n20.0\n135.0\n10.0\n9.0\n0.0\n...\n15.0\n99.0\n8.0\n26.0\n0.0\n11.0\n19.0\n5.0\n0.0\n939.0\n\n\n3\nAaden\n2009\n0.0\n28.0\n20.0\n23.0\n158.0\n22.0\n12.0\n0.0\n...\n33.0\n140.0\n6.0\n17.0\n0.0\n31.0\n23.0\n14.0\n0.0\n1242.0\n\n\n4\nAaden\n2010\n0.0\n8.0\n6.0\n12.0\n62.0\n9.0\n5.0\n0.0\n...\n9.0\n56.0\n0.0\n11.0\n0.0\n7.0\n12.0\n0.0\n0.0\n414.0\n\n\n...\n...\n...\n...\n...\n...\n...\n...\n...\n...\n...\n...\n...\n...\n...\n...\n...\n...\n...\n...\n...\n...\n\n\n393379\nZyon\n2011\n0.0\n0.0\n0.0\n6.0\n0.0\n0.0\n0.0\n0.0\n...\n5.0\n9.0\n0.0\n8.0\n0.0\n0.0\n0.0\n0.0\n0.0\n117.0\n\n\n393380\nZyon\n2012\n0.0\n0.0\n0.0\n0.0\n5.0\n0.0\n0.0\n0.0\n...\n0.0\n7.5\n0.0\n12.0\n0.0\n0.0\n0.0\n0.0\n0.0\n118.5\n\n\n393381\nZyon\n2013\n0.0\n0.0\n0.0\n0.0\n6.0\n0.0\n0.0\n0.0\n...\n0.0\n5.0\n0.0\n0.0\n0.0\n0.0\n0.0\n0.0\n0.0\n93.0\n\n\n393382\nZyon\n2014\n0.0\n7.0\n0.0\n0.0\n0.0\n0.0\n0.0\n5.0\n...\n0.0\n7.0\n0.0\n9.0\n0.0\n0.0\n0.0\n0.0\n0.0\n73.0\n\n\n393383\nZyon\n2015\n0.0\n0.0\n0.0\n0.0\n7.0\n0.0\n0.0\n0.0\n...\n0.0\n10.0\n0.0\n8.0\n0.0\n0.0\n0.0\n0.0\n0.0\n87.5\n\n\n\n\n393384 rows × 54 columns\n\n\n\nHighlight the Questions and Tasks"
   },
   {
     "objectID": "Projects/project1.html#questiontask-1",
     "href": "Projects/project1.html#questiontask-1",
     "title": "Client Report - What’s in a name?",
     "section": "QUESTION|TASK 1",
-    "text": "QUESTION|TASK 1\nHow does your name at your birth year compare to its use historically?\ntype your results and analysis here\n\n\nRead and format data\n# Include and execute your code here\n\n\ninclude figures in chunks and discuss your findings in the figure.\n::: {#cell-Q1 chart .cell execution_count=4}\n\nplot example\n# Include and execute your code here\nchart = px.bar(df.head(200),\n    x=\"name\", \n    y=\"AK\"\n)\nchart.show()\n\n\n                                                \nMy useless chart\n\n:::\n::: {#cell-Q1 table .cell .tbl-cap-location-top tbl-cap=‘Not much of a table’ execution_count=5}\n\ntable example\n# Include and execute your code here\nmydat = df.head(1000)\n\ndisplay(mydat)\n\n\n\n\n\n\n\n\n\nname\nyear\nAK\nAL\nAR\nAZ\nCA\nCO\nCT\nDC\n...\nTN\nTX\nUT\nVA\nVT\nWA\nWI\nWV\nWY\nTotal\n\n\n\n\n0\nAaden\n2005\n0.0\n0.0\n0.0\n0.0\n0.0\n0.0\n0.0\n0.0\n...\n0.0\n0.0\n0.0\n0.0\n0.0\n0.0\n0.0\n0.0\n0.0\n5.0\n\n\n1\nAaden\n2007\n0.0\n5.0\n0.0\n5.0\n20.0\n6.0\n0.0\n0.0\n...\n5.0\n14.0\n0.0\n0.0\n0.0\n0.0\n0.0\n0.0\n0.0\n98.0\n\n\n2\nAaden\n2008\n0.0\n15.0\n13.0\n20.0\n135.0\n10.0\n9.0\n0.0\n...\n15.0\n99.0\n8.0\n26.0\n0.0\n11.0\n19.0\n5.0\n0.0\n939.0\n\n\n3\nAaden\n2009\n0.0\n28.0\n20.0\n23.0\n158.0\n22.0\n12.0\n0.0\n...\n33.0\n140.0\n6.0\n17.0\n0.0\n31.0\n23.0\n14.0\n0.0\n1242.0\n\n\n4\nAaden\n2010\n0.0\n8.0\n6.0\n12.0\n62.0\n9.0\n5.0\n0.0\n...\n9.0\n56.0\n0.0\n11.0\n0.0\n7.0\n12.0\n0.0\n0.0\n414.0\n\n\n...\n...\n...\n...\n...\n...\n...\n...\n...\n...\n...\n...\n...\n...\n...\n...\n...\n...\n...\n...\n...\n...\n\n\n995\nAbel\n2000\n0.0\n0.0\n0.0\n39.0\n245.0\n24.0\n0.0\n0.0\n...\n0.0\n187.0\n7.0\n13.0\n0.0\n17.0\n0.0\n0.0\n0.0\n717.0\n\n\n996\nAbel\n2001\n0.0\n0.0\n0.0\n43.0\n224.0\n15.0\n0.0\n0.0\n...\n5.0\n141.0\n0.0\n6.0\n0.0\n22.0\n8.0\n0.0\n0.0\n702.0\n\n\n997\nAbel\n2002\n0.0\n0.0\n0.0\n38.0\n202.0\n26.0\n0.0\n0.0\n...\n5.0\n184.0\n6.0\n11.0\n0.0\n13.0\n8.0\n0.0\n0.0\n724.0\n\n\n998\nAbel\n2003\n0.0\n0.0\n0.0\n43.0\n213.0\n25.0\n0.0\n0.0\n...\n0.0\n183.0\n9.0\n9.0\n0.0\n18.0\n7.0\n0.0\n0.0\n716.0\n\n\n999\nAbel\n2004\n0.0\n0.0\n0.0\n43.0\n233.0\n21.0\n0.0\n0.0\n...\n0.0\n163.0\n0.0\n14.0\n0.0\n20.0\n8.0\n0.0\n0.0\n760.0\n\n\n\n\n1000 rows × 54 columns\n\n\n:::",
-    "crumbs": [
-      "DS250 Projects",
-      "Project 1"
-    ]
+    "text": "QUESTION|TASK 1\nHow does your name at your birth year compare to its use historically?\ntype your results and analysis here\n\n\nRead and format data\n# Include and execute your code here\n\n\ninclude figures in chunks and discuss your findings in the figure.\n\n\nplot example\n# Include and execute your code here\nchart = px.bar(df.head(200),\n    x=\"name\", \n    y=\"AK\"\n)\nchart.show()\n\n\n\n                                                \nMy useless chart\n\n\n\n\ntable example\n# Include and execute your code here\nmydat = df.head(1000)\n\ndisplay(mydat)\n\n\n\n\n\n\nNot much of a table \n\n\n\nname\nyear\nAK\nAL\nAR\nAZ\nCA\nCO\nCT\nDC\n...\nTN\nTX\nUT\nVA\nVT\nWA\nWI\nWV\nWY\nTotal\n\n\n\n\n0\nAaden\n2005\n0.0\n0.0\n0.0\n0.0\n0.0\n0.0\n0.0\n0.0\n...\n0.0\n0.0\n0.0\n0.0\n0.0\n0.0\n0.0\n0.0\n0.0\n5.0\n\n\n1\nAaden\n2007\n0.0\n5.0\n0.0\n5.0\n20.0\n6.0\n0.0\n0.0\n...\n5.0\n14.0\n0.0\n0.0\n0.0\n0.0\n0.0\n0.0\n0.0\n98.0\n\n\n2\nAaden\n2008\n0.0\n15.0\n13.0\n20.0\n135.0\n10.0\n9.0\n0.0\n...\n15.0\n99.0\n8.0\n26.0\n0.0\n11.0\n19.0\n5.0\n0.0\n939.0\n\n\n3\nAaden\n2009\n0.0\n28.0\n20.0\n23.0\n158.0\n22.0\n12.0\n0.0\n...\n33.0\n140.0\n6.0\n17.0\n0.0\n31.0\n23.0\n14.0\n0.0\n1242.0\n\n\n4\nAaden\n2010\n0.0\n8.0\n6.0\n12.0\n62.0\n9.0\n5.0\n0.0\n...\n9.0\n56.0\n0.0\n11.0\n0.0\n7.0\n12.0\n0.0\n0.0\n414.0\n\n\n...\n...\n...\n...\n...\n...\n...\n...\n...\n...\n...\n...\n...\n...\n...\n...\n...\n...\n...\n...\n...\n...\n\n\n995\nAbel\n2000\n0.0\n0.0\n0.0\n39.0\n245.0\n24.0\n0.0\n0.0\n...\n0.0\n187.0\n7.0\n13.0\n0.0\n17.0\n0.0\n0.0\n0.0\n717.0\n\n\n996\nAbel\n2001\n0.0\n0.0\n0.0\n43.0\n224.0\n15.0\n0.0\n0.0\n...\n5.0\n141.0\n0.0\n6.0\n0.0\n22.0\n8.0\n0.0\n0.0\n702.0\n\n\n997\nAbel\n2002\n0.0\n0.0\n0.0\n38.0\n202.0\n26.0\n0.0\n0.0\n...\n5.0\n184.0\n6.0\n11.0\n0.0\n13.0\n8.0\n0.0\n0.0\n724.0\n\n\n998\nAbel\n2003\n0.0\n0.0\n0.0\n43.0\n213.0\n25.0\n0.0\n0.0\n...\n0.0\n183.0\n9.0\n9.0\n0.0\n18.0\n7.0\n0.0\n0.0\n716.0\n\n\n999\nAbel\n2004\n0.0\n0.0\n0.0\n43.0\n233.0\n21.0\n0.0\n0.0\n...\n0.0\n163.0\n0.0\n14.0\n0.0\n20.0\n8.0\n0.0\n0.0\n760.0\n\n\n\n\n1000 rows × 54 columns"
   },
   {
     "objectID": "Projects/project1.html#questiontask-2",
     "href": "Projects/project1.html#questiontask-2",
     "title": "Client Report - What’s in a name?",
     "section": "QUESTION|TASK 2",
-    "text": "QUESTION|TASK 2\nIf you talked to someone named Brittany on the phone, what is your guess of his or her age? What ages would you not guess?\ntype your results and analysis here\n\n\nRead and format data\n# Include and execute your code here\n\n\ninclude figures in chunks and discuss your findings in the figure.\n::: {#cell-Q2 chart .cell execution_count=7}\n\nplot example\n# Include and execute your code here\nchart = px.bar(df.head(200),\n    x=\"name\", \n    y=\"AK\"\n)\nchart.show()\n\n\n                                                \nMy useless chart\n\n:::\n::: {#cell-Q2 table .cell .tbl-cap-location-top tbl-cap=‘Not much of a table’ execution_count=8}\n\ntable example\n# Include and execute your code here\nmydat = df.head(1000)\\\n    .groupby('year')\\\n    .sum()\\\n    .reset_index()\\\n    .tail(10)\\\n    .filter([\"year\", \"AK\",\"AR\"])\n\ndisplay(mydat)\n\n\n\n\n\n\n\n\n\nyear\nAK\nAR\n\n\n\n\n96\n2006\n21.0\n183.0\n\n\n97\n2007\n28.0\n153.0\n\n\n98\n2008\n36.0\n212.0\n\n\n99\n2009\n34.0\n179.0\n\n\n100\n2010\n22.0\n196.0\n\n\n101\n2011\n41.0\n148.0\n\n\n102\n2012\n28.0\n140.0\n\n\n103\n2013\n26.0\n134.0\n\n\n104\n2014\n20.0\n114.0\n\n\n105\n2015\n28.0\n121.0\n\n\n\n\n\n\n:::",
-    "crumbs": [
-      "DS250 Projects",
-      "Project 1"
-    ]
+    "text": "QUESTION|TASK 2\nIf you talked to someone named Brittany on the phone, what is your guess of his or her age? What ages would you not guess?\ntype your results and analysis here\n\n\nRead and format data\n# Include and execute your code here\n\n\ninclude figures in chunks and discuss your findings in the figure.\n\n\nplot example\n# Include and execute your code here\nchart = px.bar(df.head(200),\n    x=\"name\", \n    y=\"AK\"\n)\nchart.show()\n\n\n\n                                                \nMy useless chart\n\n\n\n\ntable example\n# Include and execute your code here\nmydat = df.head(1000)\\\n    .groupby('year')\\\n    .sum()\\\n    .reset_index()\\\n    .tail(10)\\\n    .filter([\"year\", \"AK\",\"AR\"])\n\ndisplay(mydat)\n\n\n\n\n\n\nNot much of a table \n\n\n\nyear\nAK\nAR\n\n\n\n\n96\n2006\n21.0\n183.0\n\n\n97\n2007\n28.0\n153.0\n\n\n98\n2008\n36.0\n212.0\n\n\n99\n2009\n34.0\n179.0\n\n\n100\n2010\n22.0\n196.0\n\n\n101\n2011\n41.0\n148.0\n\n\n102\n2012\n28.0\n140.0\n\n\n103\n2013\n26.0\n134.0\n\n\n104\n2014\n20.0\n114.0\n\n\n105\n2015\n28.0\n121.0"
   },
   {
     "objectID": "Projects/project1.html#questiontask-3",
     "href": "Projects/project1.html#questiontask-3",
     "title": "Client Report - What’s in a name?",
     "section": "QUESTION|TASK 3",
-    "text": "QUESTION|TASK 3\nMary, Martha, Peter, and Paul are all Christian names. From 1920 - 2000, compare the name usage of each of the four names. What trends do you notice?\ntype your results and analysis here\n\n\nRead and format data\n# Include and execute your code here\n\n\ninclude figures in chunks and discuss your findings in the figure.\n::: {#cell-Q3 chart .cell execution_count=10}\n\nplot example\n# Include and execute your code here\nchart = px.bar(df.head(200),\n    x=\"name\", \n    y=\"AK\"\n)\nchart.show()\n\n\n                                                \nMy useless chart\n\n:::\n::: {#cell-Q3 table .cell .tbl-cap-location-top tbl-cap=‘Not much of a table’ execution_count=11}\n\ntable example\n# Include and execute your code here\nmydat = df.head(1000)\\\n    .groupby('year')\\\n    .sum()\\\n    .reset_index()\\\n    .tail(10)\\\n    .filter([\"year\", \"AK\",\"AR\"])\n\ndisplay(mydat)\n\n\n\n\n\n\n\n\n\nyear\nAK\nAR\n\n\n\n\n96\n2006\n21.0\n183.0\n\n\n97\n2007\n28.0\n153.0\n\n\n98\n2008\n36.0\n212.0\n\n\n99\n2009\n34.0\n179.0\n\n\n100\n2010\n22.0\n196.0\n\n\n101\n2011\n41.0\n148.0\n\n\n102\n2012\n28.0\n140.0\n\n\n103\n2013\n26.0\n134.0\n\n\n104\n2014\n20.0\n114.0\n\n\n105\n2015\n28.0\n121.0\n\n\n\n\n\n\n:::",
-    "crumbs": [
-      "DS250 Projects",
-      "Project 1"
-    ]
+    "text": "QUESTION|TASK 3\nMary, Martha, Peter, and Paul are all Christian names. From 1920 - 2000, compare the name usage of each of the four names. What trends do you notice?\ntype your results and analysis here\n\n\nRead and format data\n# Include and execute your code here\n\n\ninclude figures in chunks and discuss your findings in the figure.\n\n\nplot example\n# Include and execute your code here\nchart = px.bar(df.head(200),\n    x=\"name\", \n    y=\"AK\"\n)\nchart.show()\n\n\n\n                                                \nMy useless chart\n\n\n\n\ntable example\n# Include and execute your code here\nmydat = df.head(1000)\\\n    .groupby('year')\\\n    .sum()\\\n    .reset_index()\\\n    .tail(10)\\\n    .filter([\"year\", \"AK\",\"AR\"])\n\ndisplay(mydat)\n\n\n\n\n\n\nNot much of a table \n\n\n\nyear\nAK\nAR\n\n\n\n\n96\n2006\n21.0\n183.0\n\n\n97\n2007\n28.0\n153.0\n\n\n98\n2008\n36.0\n212.0\n\n\n99\n2009\n34.0\n179.0\n\n\n100\n2010\n22.0\n196.0\n\n\n101\n2011\n41.0\n148.0\n\n\n102\n2012\n28.0\n140.0\n\n\n103\n2013\n26.0\n134.0\n\n\n104\n2014\n20.0\n114.0\n\n\n105\n2015\n28.0\n121.0"
+  },
+  {
+    "objectID": "Projects/project1.html#questiontask-4",
+    "href": "Projects/project1.html#questiontask-4",
+    "title": "Client Report - What’s in a name?",
+    "section": "QUESTION|TASK 4",
+    "text": "QUESTION|TASK 4\nThink of a unique name from a famous movie. Plot the usage of that name and see how changes line up with the movie release. Does it look like the movie had an effect on usage?\ntype your results and analysis here\n\n\nRead and format data\n# Include and execute your code here\n\n\ninclude figures in chunks and discuss your findings in the figure.\n\n\nplot example\n# Include and execute your code here\nchart = px.bar(df.head(200),\n    x=\"name\", \n    y=\"AK\"\n)\nchart.show()\n\n\n\n                                                \nMy useless chart\n\n\n\n\ntable example\n# Include and execute your code here\nmydat = df.head(1000)\\\n    .groupby('year')\\\n    .sum()\\\n    .reset_index()\\\n    .tail(10)\\\n    .filter([\"year\", \"AK\",\"AR\"])\n\ndisplay(mydat)\n\n\n\n\n\n\nNot much of a table \n\n\n\nyear\nAK\nAR\n\n\n\n\n96\n2006\n21.0\n183.0\n\n\n97\n2007\n28.0\n153.0\n\n\n98\n2008\n36.0\n212.0\n\n\n99\n2009\n34.0\n179.0\n\n\n100\n2010\n22.0\n196.0\n\n\n101\n2011\n41.0\n148.0\n\n\n102\n2012\n28.0\n140.0\n\n\n103\n2013\n26.0\n134.0\n\n\n104\n2014\n20.0\n114.0\n\n\n105\n2015\n28.0\n121.0"
   },
   {
     "objectID": "Projects/project3.html",
     "href": "Projects/project3.html",
     "title": "Client Report - [Insert Project Title]",
     "section": "",
-    "text": "paste your elevator pitch here A SHORT (4-5 SENTENCES) PARAGRAPH THAT DESCRIBES KEY INSIGHTS TAKEN FROM METRICS IN THE PROJECT RESULTS THINK TOP OR MOST IMPORTANT RESULTS.\n\n\nRead and format project data\n# Include and execute your code here\ndf = pd.read_csv(\"https://github.com/byuidatascience/data4names/raw/master/data-raw/names_year/names_year.csv\")\n\n\nHighlight the Questions and Tasks",
-    "crumbs": [
-      "DS250 Projects",
-      "Project 3"
-    ]
+    "text": "paste your elevator pitch here A SHORT (4-5 SENTENCES) PARAGRAPH THAT DESCRIBES KEY INSIGHTS TAKEN FROM METRICS IN THE PROJECT RESULTS THINK TOP OR MOST IMPORTANT RESULTS.\n\n\nRead and format project data\n# Include and execute your code here\ndf = pd.read_csv(\"https://github.com/byuidatascience/data4names/raw/master/data-raw/names_year/names_year.csv\")\n\n\nHighlight the Questions and Tasks"
   },
   {
     "objectID": "Projects/project3.html#elevator-pitch",
     "href": "Projects/project3.html#elevator-pitch",
     "title": "Client Report - [Insert Project Title]",
     "section": "",
-    "text": "paste your elevator pitch here A SHORT (4-5 SENTENCES) PARAGRAPH THAT DESCRIBES KEY INSIGHTS TAKEN FROM METRICS IN THE PROJECT RESULTS THINK TOP OR MOST IMPORTANT RESULTS.\n\n\nRead and format project data\n# Include and execute your code here\ndf = pd.read_csv(\"https://github.com/byuidatascience/data4names/raw/master/data-raw/names_year/names_year.csv\")\n\n\nHighlight the Questions and Tasks",
-    "crumbs": [
-      "DS250 Projects",
-      "Project 3"
-    ]
+    "text": "paste your elevator pitch here A SHORT (4-5 SENTENCES) PARAGRAPH THAT DESCRIBES KEY INSIGHTS TAKEN FROM METRICS IN THE PROJECT RESULTS THINK TOP OR MOST IMPORTANT RESULTS.\n\n\nRead and format project data\n# Include and execute your code here\ndf = pd.read_csv(\"https://github.com/byuidatascience/data4names/raw/master/data-raw/names_year/names_year.csv\")\n\n\nHighlight the Questions and Tasks"
   },
   {
     "objectID": "Projects/project3.html#questiontask-1",
     "href": "Projects/project3.html#questiontask-1",
     "title": "Client Report - [Insert Project Title]",
     "section": "QUESTION|TASK 1",
-    "text": "QUESTION|TASK 1\nCOPY PASTE QUESTION|TASK 1 FROM THE PROJECT HERE\ntype your results and analysis here\n\n\nRead and format data\n# Include and execute your code here\n\n\ninclude figures in chunks and discuss your findings in the figure.\n::: {#cell-Q1 chart .cell execution_count=4}\n\nplot example\n# Include and execute your code here\nchart = px.bar(df.head(200),\n    x=\"name\", \n    y=\"AK\"\n)\nchart.show()\n\n\n                                                \nMy useless chart\n\n:::\n::: {#cell-Q1 table .cell .tbl-cap-location-top tbl-cap=‘Not much of a table’ execution_count=5}\n\ntable example\n# Include and execute your code here\nmydat = df.head(1000)\\\n    .groupby('year')\\\n    .sum()\\\n    .reset_index()\\\n    .tail(10)\\\n    .filter([\"year\", \"AK\",\"AR\"])\n\ndisplay(mydat)\n\n\n\n\n\n\n\n\n\nyear\nAK\nAR\n\n\n\n\n96\n2006\n21.0\n183.0\n\n\n97\n2007\n28.0\n153.0\n\n\n98\n2008\n36.0\n212.0\n\n\n99\n2009\n34.0\n179.0\n\n\n100\n2010\n22.0\n196.0\n\n\n101\n2011\n41.0\n148.0\n\n\n102\n2012\n28.0\n140.0\n\n\n103\n2013\n26.0\n134.0\n\n\n104\n2014\n20.0\n114.0\n\n\n105\n2015\n28.0\n121.0\n\n\n\n\n\n\n:::",
-    "crumbs": [
-      "DS250 Projects",
-      "Project 3"
-    ]
+    "text": "QUESTION|TASK 1\nCOPY PASTE QUESTION|TASK 1 FROM THE PROJECT HERE\ntype your results and analysis here\n\n\nRead and format data\n# Include and execute your code here\n\n\ninclude figures in chunks and discuss your findings in the figure.\n\n\nplot example\n# Include and execute your code here\nchart = px.bar(df.head(200),\n    x=\"name\", \n    y=\"AK\"\n)\nchart.show()\n\n\n\n                                                \nMy useless chart\n\n\n\n\ntable example\n# Include and execute your code here\nmydat = df.head(1000)\\\n    .groupby('year')\\\n    .sum()\\\n    .reset_index()\\\n    .tail(10)\\\n    .filter([\"year\", \"AK\",\"AR\"])\n\ndisplay(mydat)\n\n\n\n\n\n\nNot much of a table \n\n\n\nyear\nAK\nAR\n\n\n\n\n96\n2006\n21.0\n183.0\n\n\n97\n2007\n28.0\n153.0\n\n\n98\n2008\n36.0\n212.0\n\n\n99\n2009\n34.0\n179.0\n\n\n100\n2010\n22.0\n196.0\n\n\n101\n2011\n41.0\n148.0\n\n\n102\n2012\n28.0\n140.0\n\n\n103\n2013\n26.0\n134.0\n\n\n104\n2014\n20.0\n114.0\n\n\n105\n2015\n28.0\n121.0"
   },
   {
     "objectID": "Projects/project3.html#questiontask-2",
     "href": "Projects/project3.html#questiontask-2",
     "title": "Client Report - [Insert Project Title]",
     "section": "QUESTION|TASK 2",
-    "text": "QUESTION|TASK 2\nCOPY PASTE QUESTION|TASK 2 FROM THE PROJECT HERE\ntype your results and analysis here\n\n\nRead and format data\n# Include and execute your code here\n\n\ninclude figures in chunks and discuss your findings in the figure.\n::: {#cell-Q2 chart .cell execution_count=7}\n\nplot example\n# Include and execute your code here\nchart = px.bar(df.head(200),\n    x=\"name\", \n    y=\"AK\"\n)\nchart.show()\n\n\n                                                \nMy useless chart\n\n:::\n::: {#cell-Q2 table .cell .tbl-cap-location-top tbl-cap=‘Not much of a table’ execution_count=8}\n\ntable example\n# Include and execute your code here\nmydat = df.head(1000)\\\n    .groupby('year')\\\n    .sum()\\\n    .reset_index()\\\n    .tail(10)\\\n    .filter([\"year\", \"AK\",\"AR\"])\n\ndisplay(mydat)\n\n\n\n\n\n\n\n\n\nyear\nAK\nAR\n\n\n\n\n96\n2006\n21.0\n183.0\n\n\n97\n2007\n28.0\n153.0\n\n\n98\n2008\n36.0\n212.0\n\n\n99\n2009\n34.0\n179.0\n\n\n100\n2010\n22.0\n196.0\n\n\n101\n2011\n41.0\n148.0\n\n\n102\n2012\n28.0\n140.0\n\n\n103\n2013\n26.0\n134.0\n\n\n104\n2014\n20.0\n114.0\n\n\n105\n2015\n28.0\n121.0\n\n\n\n\n\n\n:::",
-    "crumbs": [
-      "DS250 Projects",
-      "Project 3"
-    ]
+    "text": "QUESTION|TASK 2\nCOPY PASTE QUESTION|TASK 2 FROM THE PROJECT HERE\ntype your results and analysis here\n\n\nRead and format data\n# Include and execute your code here\n\n\ninclude figures in chunks and discuss your findings in the figure.\n\n\nplot example\n# Include and execute your code here\nchart = px.bar(df.head(200),\n    x=\"name\", \n    y=\"AK\"\n)\nchart.show()\n\n\n\n                                                \nMy useless chart\n\n\n\n\ntable example\n# Include and execute your code here\nmydat = df.head(1000)\\\n    .groupby('year')\\\n    .sum()\\\n    .reset_index()\\\n    .tail(10)\\\n    .filter([\"year\", \"AK\",\"AR\"])\n\ndisplay(mydat)\n\n\n\n\n\n\nNot much of a table \n\n\n\nyear\nAK\nAR\n\n\n\n\n96\n2006\n21.0\n183.0\n\n\n97\n2007\n28.0\n153.0\n\n\n98\n2008\n36.0\n212.0\n\n\n99\n2009\n34.0\n179.0\n\n\n100\n2010\n22.0\n196.0\n\n\n101\n2011\n41.0\n148.0\n\n\n102\n2012\n28.0\n140.0\n\n\n103\n2013\n26.0\n134.0\n\n\n104\n2014\n20.0\n114.0\n\n\n105\n2015\n28.0\n121.0"
   },
   {
     "objectID": "Projects/project3.html#questiontask-3",
     "href": "Projects/project3.html#questiontask-3",
     "title": "Client Report - [Insert Project Title]",
     "section": "QUESTION|TASK 3",
-    "text": "QUESTION|TASK 3\nCOPY PASTE QUESTION|TASK 3 FROM THE PROJECT HERE\ntype your results and analysis here\n\n\nRead and format data\n# Include and execute your code here\n\n\ninclude figures in chunks and discuss your findings in the figure.\n::: {#cell-Q3 chart .cell execution_count=10}\n\nplot example\n# Include and execute your code here\nchart = px.bar(df.head(200),\n    x=\"name\", \n    y=\"AK\"\n)\nchart.show()\n\n\n                                                \nMy useless chart\n\n:::\n::: {#cell-Q3 table .cell .tbl-cap-location-top tbl-cap=‘Not much of a table’ execution_count=11}\n\ntable example\n# Include and execute your code here\nmydat = df.head(1000)\\\n    .groupby('year')\\\n    .sum()\\\n    .reset_index()\\\n    .tail(10)\\\n    .filter([\"year\", \"AK\",\"AR\"])\n\ndisplay(mydat)\n\n\n\n\n\n\n\n\n\nyear\nAK\nAR\n\n\n\n\n96\n2006\n21.0\n183.0\n\n\n97\n2007\n28.0\n153.0\n\n\n98\n2008\n36.0\n212.0\n\n\n99\n2009\n34.0\n179.0\n\n\n100\n2010\n22.0\n196.0\n\n\n101\n2011\n41.0\n148.0\n\n\n102\n2012\n28.0\n140.0\n\n\n103\n2013\n26.0\n134.0\n\n\n104\n2014\n20.0\n114.0\n\n\n105\n2015\n28.0\n121.0\n\n\n\n\n\n\n:::",
-    "crumbs": [
-      "DS250 Projects",
-      "Project 3"
-    ]
+    "text": "QUESTION|TASK 3\nCOPY PASTE QUESTION|TASK 3 FROM THE PROJECT HERE\ntype your results and analysis here\n\n\nRead and format data\n# Include and execute your code here\n\n\ninclude figures in chunks and discuss your findings in the figure.\n\n\nplot example\n# Include and execute your code here\nchart = px.bar(df.head(200),\n    x=\"name\", \n    y=\"AK\"\n)\nchart.show()\n\n\n\n                                                \nMy useless chart\n\n\n\n\ntable example\n# Include and execute your code here\nmydat = df.head(1000)\\\n    .groupby('year')\\\n    .sum()\\\n    .reset_index()\\\n    .tail(10)\\\n    .filter([\"year\", \"AK\",\"AR\"])\n\ndisplay(mydat)\n\n\n\n\n\n\nNot much of a table \n\n\n\nyear\nAK\nAR\n\n\n\n\n96\n2006\n21.0\n183.0\n\n\n97\n2007\n28.0\n153.0\n\n\n98\n2008\n36.0\n212.0\n\n\n99\n2009\n34.0\n179.0\n\n\n100\n2010\n22.0\n196.0\n\n\n101\n2011\n41.0\n148.0\n\n\n102\n2012\n28.0\n140.0\n\n\n103\n2013\n26.0\n134.0\n\n\n104\n2014\n20.0\n114.0\n\n\n105\n2015\n28.0\n121.0"
   },
   {
     "objectID": "Projects/project5.html",
     "href": "Projects/project5.html",
     "title": "Client Report - [Insert Project Title]",
     "section": "",
-    "text": "paste your elevator pitch here A SHORT (4-5 SENTENCES) PARAGRAPH THAT DESCRIBES KEY INSIGHTS TAKEN FROM METRICS IN THE PROJECT RESULTS THINK TOP OR MOST IMPORTANT RESULTS.\n\n\nRead and format project data\n# Include and execute your code here\ndf = pd.read_csv(\"https://github.com/byuidatascience/data4names/raw/master/data-raw/names_year/names_year.csv\")\n\n\nHighlight the Questions and Tasks",
-    "crumbs": [
-      "DS250 Projects",
-      "Project 5"
-    ]
+    "text": "paste your elevator pitch here A SHORT (4-5 SENTENCES) PARAGRAPH THAT DESCRIBES KEY INSIGHTS TAKEN FROM METRICS IN THE PROJECT RESULTS THINK TOP OR MOST IMPORTANT RESULTS.\n\n\nRead and format project data\n# Include and execute your code here\ndf = pd.read_csv(\"https://github.com/byuidatascience/data4names/raw/master/data-raw/names_year/names_year.csv\")\n\n\nHighlight the Questions and Tasks"
   },
   {
     "objectID": "Projects/project5.html#elevator-pitch",
     "href": "Projects/project5.html#elevator-pitch",
     "title": "Client Report - [Insert Project Title]",
     "section": "",
-    "text": "paste your elevator pitch here A SHORT (4-5 SENTENCES) PARAGRAPH THAT DESCRIBES KEY INSIGHTS TAKEN FROM METRICS IN THE PROJECT RESULTS THINK TOP OR MOST IMPORTANT RESULTS.\n\n\nRead and format project data\n# Include and execute your code here\ndf = pd.read_csv(\"https://github.com/byuidatascience/data4names/raw/master/data-raw/names_year/names_year.csv\")\n\n\nHighlight the Questions and Tasks",
-    "crumbs": [
-      "DS250 Projects",
-      "Project 5"
-    ]
+    "text": "paste your elevator pitch here A SHORT (4-5 SENTENCES) PARAGRAPH THAT DESCRIBES KEY INSIGHTS TAKEN FROM METRICS IN THE PROJECT RESULTS THINK TOP OR MOST IMPORTANT RESULTS.\n\n\nRead and format project data\n# Include and execute your code here\ndf = pd.read_csv(\"https://github.com/byuidatascience/data4names/raw/master/data-raw/names_year/names_year.csv\")\n\n\nHighlight the Questions and Tasks"
   },
   {
     "objectID": "Projects/project5.html#questiontask-1",
     "href": "Projects/project5.html#questiontask-1",
     "title": "Client Report - [Insert Project Title]",
     "section": "QUESTION|TASK 1",
-    "text": "QUESTION|TASK 1\nCOPY PASTE QUESTION|TASK 1 FROM THE PROJECT HERE\ntype your results and analysis here\n\n\nRead and format data\n# Include and execute your code here\n\n\ninclude figures in chunks and discuss your findings in the figure.\n::: {#cell-Q1 chart .cell execution_count=4}\n\nplot example\n# Include and execute your code here\nchart = px.bar(df.head(200),\n    x=\"name\", \n    y=\"AK\"\n)\nchart.show()\n\n\n                                                \nMy useless chart\n\n:::\n::: {#cell-Q1 table .cell .tbl-cap-location-top tbl-cap=‘Not much of a table’ execution_count=5}\n\ntable example\n# Include and execute your code here\nmydat = df.head(1000)\\\n    .groupby('year')\\\n    .sum()\\\n    .reset_index()\\\n    .tail(10)\\\n    .filter([\"year\", \"AK\",\"AR\"])\n\ndisplay(mydat)\n\n\n\n\n\n\n\n\n\nyear\nAK\nAR\n\n\n\n\n96\n2006\n21.0\n183.0\n\n\n97\n2007\n28.0\n153.0\n\n\n98\n2008\n36.0\n212.0\n\n\n99\n2009\n34.0\n179.0\n\n\n100\n2010\n22.0\n196.0\n\n\n101\n2011\n41.0\n148.0\n\n\n102\n2012\n28.0\n140.0\n\n\n103\n2013\n26.0\n134.0\n\n\n104\n2014\n20.0\n114.0\n\n\n105\n2015\n28.0\n121.0\n\n\n\n\n\n\n:::",
-    "crumbs": [
-      "DS250 Projects",
-      "Project 5"
-    ]
+    "text": "QUESTION|TASK 1\nCOPY PASTE QUESTION|TASK 1 FROM THE PROJECT HERE\ntype your results and analysis here\n\n\nRead and format data\n# Include and execute your code here\n\n\ninclude figures in chunks and discuss your findings in the figure.\n\n\nplot example\n# Include and execute your code here\nchart = px.bar(df.head(200),\n    x=\"name\", \n    y=\"AK\"\n)\nchart.show()\n\n\n\n                                                \nMy useless chart\n\n\n\n\ntable example\n# Include and execute your code here\nmydat = df.head(1000)\\\n    .groupby('year')\\\n    .sum()\\\n    .reset_index()\\\n    .tail(10)\\\n    .filter([\"year\", \"AK\",\"AR\"])\n\ndisplay(mydat)\n\n\n\n\n\n\nNot much of a table \n\n\n\nyear\nAK\nAR\n\n\n\n\n96\n2006\n21.0\n183.0\n\n\n97\n2007\n28.0\n153.0\n\n\n98\n2008\n36.0\n212.0\n\n\n99\n2009\n34.0\n179.0\n\n\n100\n2010\n22.0\n196.0\n\n\n101\n2011\n41.0\n148.0\n\n\n102\n2012\n28.0\n140.0\n\n\n103\n2013\n26.0\n134.0\n\n\n104\n2014\n20.0\n114.0\n\n\n105\n2015\n28.0\n121.0"
   },
   {
     "objectID": "Projects/project5.html#questiontask-2",
     "href": "Projects/project5.html#questiontask-2",
     "title": "Client Report - [Insert Project Title]",
     "section": "QUESTION|TASK 2",
-    "text": "QUESTION|TASK 2\nCOPY PASTE QUESTION|TASK 2 FROM THE PROJECT HERE\ntype your results and analysis here\n\n\nRead and format data\n# Include and execute your code here\n\n\ninclude figures in chunks and discuss your findings in the figure.\n::: {#cell-Q2 chart .cell execution_count=7}\n\nplot example\n# Include and execute your code here\nchart = px.bar(df.head(200),\n    x=\"name\", \n    y=\"AK\"\n)\nchart.show()\n\n\n                                                \nMy useless chart\n\n:::\n::: {#cell-Q2 table .cell .tbl-cap-location-top tbl-cap=‘Not much of a table’ execution_count=8}\n\ntable example\n# Include and execute your code here\nmydat = df.head(1000)\\\n    .groupby('year')\\\n    .sum()\\\n    .reset_index()\\\n    .tail(10)\\\n    .filter([\"year\", \"AK\",\"AR\"])\n\ndisplay(mydat)\n\n\n\n\n\n\n\n\n\nyear\nAK\nAR\n\n\n\n\n96\n2006\n21.0\n183.0\n\n\n97\n2007\n28.0\n153.0\n\n\n98\n2008\n36.0\n212.0\n\n\n99\n2009\n34.0\n179.0\n\n\n100\n2010\n22.0\n196.0\n\n\n101\n2011\n41.0\n148.0\n\n\n102\n2012\n28.0\n140.0\n\n\n103\n2013\n26.0\n134.0\n\n\n104\n2014\n20.0\n114.0\n\n\n105\n2015\n28.0\n121.0\n\n\n\n\n\n\n:::",
-    "crumbs": [
-      "DS250 Projects",
-      "Project 5"
-    ]
+    "text": "QUESTION|TASK 2\nCOPY PASTE QUESTION|TASK 2 FROM THE PROJECT HERE\ntype your results and analysis here\n\n\nRead and format data\n# Include and execute your code here\n\n\ninclude figures in chunks and discuss your findings in the figure.\n\n\nplot example\n# Include and execute your code here\nchart = px.bar(df.head(200),\n    x=\"name\", \n    y=\"AK\"\n)\nchart.show()\n\n\n\n                                                \nMy useless chart\n\n\n\n\ntable example\n# Include and execute your code here\nmydat = df.head(1000)\\\n    .groupby('year')\\\n    .sum()\\\n    .reset_index()\\\n    .tail(10)\\\n    .filter([\"year\", \"AK\",\"AR\"])\n\ndisplay(mydat)\n\n\n\n\n\n\nNot much of a table \n\n\n\nyear\nAK\nAR\n\n\n\n\n96\n2006\n21.0\n183.0\n\n\n97\n2007\n28.0\n153.0\n\n\n98\n2008\n36.0\n212.0\n\n\n99\n2009\n34.0\n179.0\n\n\n100\n2010\n22.0\n196.0\n\n\n101\n2011\n41.0\n148.0\n\n\n102\n2012\n28.0\n140.0\n\n\n103\n2013\n26.0\n134.0\n\n\n104\n2014\n20.0\n114.0\n\n\n105\n2015\n28.0\n121.0"
   },
   {
     "objectID": "Projects/project5.html#questiontask-3",
     "href": "Projects/project5.html#questiontask-3",
     "title": "Client Report - [Insert Project Title]",
     "section": "QUESTION|TASK 3",
-    "text": "QUESTION|TASK 3\nCOPY PASTE QUESTION|TASK 3 FROM THE PROJECT HERE\ntype your results and analysis here\n\n\nRead and format data\n# Include and execute your code here\n\n\ninclude figures in chunks and discuss your findings in the figure.\n::: {#cell-Q3 chart .cell execution_count=10}\n\nplot example\n# Include and execute your code here\nchart = px.bar(df.head(200),\n    x=\"name\", \n    y=\"AK\"\n)\nchart.show()\n\n\n                                                \nMy useless chart\n\n:::\n::: {#cell-Q3 table .cell .tbl-cap-location-top tbl-cap=‘Not much of a table’ execution_count=11}\n\ntable example\n# Include and execute your code here\nmydat = df.head(1000)\\\n    .groupby('year')\\\n    .sum()\\\n    .reset_index()\\\n    .tail(10)\\\n    .filter([\"year\", \"AK\",\"AR\"])\n\ndisplay(mydat)\n\n\n\n\n\n\n\n\n\nyear\nAK\nAR\n\n\n\n\n96\n2006\n21.0\n183.0\n\n\n97\n2007\n28.0\n153.0\n\n\n98\n2008\n36.0\n212.0\n\n\n99\n2009\n34.0\n179.0\n\n\n100\n2010\n22.0\n196.0\n\n\n101\n2011\n41.0\n148.0\n\n\n102\n2012\n28.0\n140.0\n\n\n103\n2013\n26.0\n134.0\n\n\n104\n2014\n20.0\n114.0\n\n\n105\n2015\n28.0\n121.0\n\n\n\n\n\n\n:::",
-    "crumbs": [
-      "DS250 Projects",
-      "Project 5"
-    ]
+    "text": "QUESTION|TASK 3\nCOPY PASTE QUESTION|TASK 3 FROM THE PROJECT HERE\ntype your results and analysis here\n\n\nRead and format data\n# Include and execute your code here\n\n\ninclude figures in chunks and discuss your findings in the figure.\n\n\nplot example\n# Include and execute your code here\nchart = px.bar(df.head(200),\n    x=\"name\", \n    y=\"AK\"\n)\nchart.show()\n\n\n\n                                                \nMy useless chart\n\n\n\n\ntable example\n# Include and execute your code here\nmydat = df.head(1000)\\\n    .groupby('year')\\\n    .sum()\\\n    .reset_index()\\\n    .tail(10)\\\n    .filter([\"year\", \"AK\",\"AR\"])\n\ndisplay(mydat)\n\n\n\n\n\n\nNot much of a table \n\n\n\nyear\nAK\nAR\n\n\n\n\n96\n2006\n21.0\n183.0\n\n\n97\n2007\n28.0\n153.0\n\n\n98\n2008\n36.0\n212.0\n\n\n99\n2009\n34.0\n179.0\n\n\n100\n2010\n22.0\n196.0\n\n\n101\n2011\n41.0\n148.0\n\n\n102\n2012\n28.0\n140.0\n\n\n103\n2013\n26.0\n134.0\n\n\n104\n2014\n20.0\n114.0\n\n\n105\n2015\n28.0\n121.0"
   },
   {
     "objectID": "resume.html",
@@ -405,16 +306,5 @@
     "title": "About Me",
     "section": "",
     "text": "2019 - Present\n\n\n\n\nAmazon DSP Delivery Driver | Metropolitan logistics | Sterling, VA August 2022 - December 2022 * Developed good customer service skills through delivering up to 600 packages to customer instructions * Displayed an ability to work and efficiently manage time for up to 10 hours * Enhanced physical fitness through ability to lift packages weighing up to 50 lbs all day * Refined attention to detail by demonstrating highest level of integrity, compliance, and adherence within delivery/transportation services * Honed strong verbal communication skills while working with a team of 15\nDelivery Technician | Mountain Hot Tub | Helena, MT September 2021 - December 2021 * Delivered and installed up to 3 hot tubs by working in teams including filling and connecting * Troubleshot onsite problems, offering immediate and long-term solutions\nCustomer Care and Loyalty Agent | SafeStreetsUSA | Rexburg, ID March 2021 - June 2021 * Resolved calls from national customers while balancing company policies\nService Volunteer | Church of Jesus Christ of Latter Day Saints | Tijuana, Baja California March 2021 - June 2021 August 2017 - August 2019\n\n\n\n\nData Analysis: Excel, Power BI, Python, R\nDatabase Management: MySQL\nOther Technical: QuickBooks, Git/GitHub\nSoft Skills: Customer Service, Communication, Problem-Solving\n\n\n\n\n\nSpanish - Intermediate\n\n\n\n\n\nCompTIA A+\n\n\n\n\n\nData Science Society:\nFinance Society:\nEagle Scout & Boy Scouts of America"
-  },
-  {
-    "objectID": "Projects/project1.html#questiontask-4",
-    "href": "Projects/project1.html#questiontask-4",
-    "title": "Client Report - What’s in a name?",
-    "section": "QUESTION|TASK 4",
-    "text": "QUESTION|TASK 4\nThink of a unique name from a famous movie. Plot the usage of that name and see how changes line up with the movie release. Does it look like the movie had an effect on usage?\ntype your results and analysis here\n\n\nRead and format data\n# Include and execute your code here\n\n\ninclude figures in chunks and discuss your findings in the figure.\n::: {#cell-Q4 chart .cell execution_count=13}\n\nplot example\n# Include and execute your code here\nchart = px.bar(df.head(200),\n    x=\"name\", \n    y=\"AK\"\n)\nchart.show()\n\n\n                                                \nMy useless chart\n\n:::\n::: {#cell-Q4 table .cell .tbl-cap-location-top tbl-cap=‘Not much of a table’ execution_count=14}\n\ntable example\n# Include and execute your code here\nmydat = df.head(1000)\\\n    .groupby('year')\\\n    .sum()\\\n    .reset_index()\\\n    .tail(10)\\\n    .filter([\"year\", \"AK\",\"AR\"])\n\ndisplay(mydat)\n\n\n\n\n\n\n\n\n\nyear\nAK\nAR\n\n\n\n\n96\n2006\n21.0\n183.0\n\n\n97\n2007\n28.0\n153.0\n\n\n98\n2008\n36.0\n212.0\n\n\n99\n2009\n34.0\n179.0\n\n\n100\n2010\n22.0\n196.0\n\n\n101\n2011\n41.0\n148.0\n\n\n102\n2012\n28.0\n140.0\n\n\n103\n2013\n26.0\n134.0\n\n\n104\n2014\n20.0\n114.0\n\n\n105\n2015\n28.0\n121.0\n\n\n\n\n\n\n:::",
-    "crumbs": [
-      "DS250 Projects",
-      "Project 1"
-    ]
   }
 ]
