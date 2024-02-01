@@ -159,12 +159,12 @@ _type your results and analysis here_
 #| label: Q2
 #| code-summary: Read and format data
 # Include and execute your code here
-brit = df[df['name'] == 'Brittany'] 
-c_yr = datetime.now().year
+# brit = df[df['name'] == 'Brittany'] 
+# c_yr = datetime.now().year
 
-brit['Age'] = c_yr - brit['year']
-#show(brit)
-peak2 = brit[brit['Age'] == 34]
+# brit['Age'] = c_yr - brit['year']
+# #show(brit)
+# peak2 = brit[brit['Age'] == 34]
 
 ```
 
@@ -176,66 +176,66 @@ peak2 = brit[brit['Age'] == 34]
 #| fig-cap: ""
 #| fig-align: center
 # Include and execute your code here
-fig2 = px.line(
-    brit, 
-    x = 'Age', 
-    y = 'Total',
-    title = 'Most Likely Age of a Brittany',
-    markers = True, 
-    line_shape = 'spline'
-)
-fig2.add_scatter(
-    x=peak2['Age'], 
-    y=peak2['Total'],
-    mode='markers', 
-    marker=dict(color='darkgoldenrod', size=10),
-    showlegend=False
-)
-fig2.add_annotation(
-    x=peak2['Age'], 
-    y=peak2['Total'], 
-    text="Peak",
-    showarrow=True,
-    arrowhead=1,
-    ax=20,  
-    ay=-30,
-    arrowcolor="darkgoldenrod",
-    font= dict(color="darkgoldenrod")
-)
-fig2.add_vline(
-    x=brit['Age'].mean(), 
-    line_width=2, 
-    line_dash="dash", 
-    line_color="red"
-)
-fig2.add_annotation(
-    x=brit['Age'].mean()+1, 
-    y=10000, 
-    text="Mean",
-    showarrow=True,
-    arrowhead=1,
-    ax=20,  
-    ay=-30,
-    arrowcolor="red",
-    font= dict(color="red")
-)
-fig2.update_layout(
-    plot_bgcolor = 'white',
-    xaxis_title = 'Age',
-    yaxis_title = 'Total', 
-    title_x = 0.5,
-    title_font = dict(size = 24)
-)
-fig2.update_xaxes( 
-    showgrid = True, 
-    gridcolor = 'lightgray'
-) 
-fig2.update_yaxes(
-    showgrid=True,  
-    gridcolor='lightgray'  
-)
+# fig2 = px.line(
+#     brit, 
+#     x = 'Age', 
+#     y = 'Total',
+#     title = 'Most Likely Age of a Brittany',
+#     markers = True, 
+#     line_shape = 'spline'
+# )
+# fig2.add_scatter(
+#     x=peak2['Age'], 
+#     y=peak2['Total'],
+#     mode='markers', 
+#     marker=dict(color='darkgoldenrod', size=10),
+#     showlegend=False
+# )
+# fig2.add_annotation(
+#     x=peak2['Age'], 
+#     y=peak2['Total'], 
+#     text="Peak",
+#     showarrow=True,
+#     arrowhead=1,
+#     ax=20,  
+#     ay=-30,
+#     arrowcolor="darkgoldenrod",
+#     font= dict(color="darkgoldenrod")
+# )
+# fig2.add_vline(
+#     x=brit['Age'].mean(), 
+#     line_width=2, 
+#     line_dash="dash", 
+#     line_color="red"
+# )
+# fig2.add_annotation(
+#     x=brit['Age'].mean()+1, 
+#     y=10000, 
+#     text="Mean",
+#     showarrow=True,
+#     arrowhead=1,
+#     ax=20,  
+#     ay=-30,
+#     arrowcolor="red",
+#     font= dict(color="red")
+# )
+# fig2.update_layout(
+#     plot_bgcolor = 'white',
+#     xaxis_title = 'Age',
+#     yaxis_title = 'Total', 
+#     title_x = 0.5,
+#     title_font = dict(size = 24)
+# )
+# fig2.update_xaxes( 
+#     showgrid = True, 
+#     gridcolor = 'lightgray'
+# ) 
+# fig2.update_yaxes(
+#     showgrid=True,  
+#     gridcolor='lightgray'  
+# )
 
-fig2.show()
+# fig2.show()
 ```
 
 
@@ -250,13 +250,13 @@ _type your results and analysis here_
 #| label: Q3
 #| code-summary: Read and format data
 # Include and execute your code here
-chris = df[df['name'] == 'Mary' |
-    df['name'] == 'Martha' |
-    df['name'] == 'Peter' |
-    df['name'] == 'Paul' 
-] 
-chris = chris[chris['year'] > 1920]
-show(chris)
+# chris = df[df['name'] == 'Mary' |
+#     df['name'] == 'Martha' |
+#     df['name'] == 'Peter' |
+#     df['name'] == 'Paul' 
+# ] 
+# chris = chris[chris['year'] > 1920]
+# show(chris)
 
 ```
 
