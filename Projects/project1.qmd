@@ -31,6 +31,7 @@ execute:
 import pandas as pd
 import numpy as np
 import plotly.express as px
+from pandasgui import show
 ```
 
 
@@ -44,52 +45,107 @@ _A SHORT (4-5 SENTENCES) PARAGRAPH THAT `DESCRIBES KEY INSIGHTS` TAKEN FROM METR
 #| code-summary: Read and format project data
 # Include and execute your code here
 df = pd.read_csv("https://raw.githubusercontent.com/byuidatascience/data4names/master/data-raw/names_year/names_year.csv")
-df
+#show(df)
 ```
 
-__Highlight the Questions and Tasks__
+
 
 ## QUESTION|TASK 1
 
 __How does your name at your birth year compare to its use historically?__
 
-_type your results and analysis here_
+_Starting in 1910 till 1962, where children being named Travis began to increase. By the year 1978, 6,849 children had been named Travis. The transition between 1978 and 1979 would then experience a 32% increase in usage. For the years between 1979 and 1990, the name would see alot of fluctuation in how often it was used. 1990 would mark the peak usage as well as see the name's continual decline till the end of the data set. Specifically, between 1990 and 1998, my birthday, the name saw a 66% decline in usage. 2007 broke the continuous declines, with a small increase before continuing the decreasing decline._
 
 ```{python}
 #| label: Q1
 #| code-summary: Read and format data
 # Include and execute your code here
+travis = df[df['name'] == 'Travis'] 
+hl = travis[travis['year'] == 1998]
+peak = travis[travis['year'] == 1990]
 
+total_df1 = travis[travis['year'] == 1990]['Total'].values[0]
+total_df2 = travis[travis['year'] == 1998]['Total'].values[0]
+total_df3 = travis[travis['year'] == 1978]['Total'].values[0]
+total_df4 = travis[travis['year'] == 1979]['Total'].values[0]
 
+percent_decrease = ((total_df1 - total_df2) / total_df1) * 100
+print(percent_decrease)
+percent_decrease2 = ((total_df4 - total_df3) / total_df1) * 100
+print(percent_decrease2)
+# show(travis)
 ```
 
-_include figures in chunks and discuss your findings in the figure._
 
 ```{python}
-#| label: Q1 chart
-#| code-summary: plot example
-#| fig-cap: "My useless chart"
+#| label: Travis Name Trends
+#| code-summary: Code
+#| fig-cap: "This graph shows the trends when it came to naming children Travis since 1910."
 #| fig-align: center
 # Include and execute your code here
-chart = px.bar(df.head(200),
-    x="name", 
-    y="AK"
+
+fig = px.line(
+    travis, 
+    x = 'year', 
+    y = 'Total',
+    title = 'Travis Name Usage Trends since 1910',
+    markers = True, 
+    line_shape = 'spline'
+) 
+fig.add_scatter(
+    x=hl['year'], 
+    y=hl['Total'],
+    mode='markers', 
+    marker=dict(color='darkgoldenrod', size=10),
+    showlegend=False
 )
-chart.show()
+fig.add_annotation(
+    x=1999, 
+    y=max(hl['Total'])+150, 
+    text="My Birthday",
+    showarrow=True,
+    arrowhead=1,
+    ax=20,  
+    ay=-30,
+    arrowcolor="darkgoldenrod",
+    font= dict(color="darkgoldenrod")
+)
+fig.add_vline(
+    x=1990, 
+    line_width=2, 
+    line_dash="dash", 
+    line_color="red"
+)
+fig.add_annotation(
+    x=1991, 
+    y=max(travis['Total'])+180, 
+    text="Peak",
+    showarrow=True,
+    arrowhead=1,
+    ax=20,  
+    ay=-30,
+    arrowcolor="red",
+    font= dict(color="red")
+)
+fig.update_layout(
+    plot_bgcolor = 'white',
+    xaxis_title = 'Year',
+    yaxis_title = 'Total', 
+    title_x = 0.5,
+    title_font = dict(size = 24)
+)
+fig.update_xaxes( 
+    showgrid = True, 
+    gridcolor = 'lightgray'
+) 
+fig.update_yaxes(
+    showgrid=True,  
+    gridcolor='lightgray'  
+)
+
+fig.show()
 ```
 
-
-```{python}
-#| label: Q1 table
-#| code-summary: table example
-#| tbl-cap: "Not much of a table"
-#| tbl-cap-location: top
-# Include and execute your code here
-mydat = df.head(1000)
-
-display(mydat)
-
-```
 
 
 ## QUESTION|TASK 2
@@ -103,6 +159,7 @@ _type your results and analysis here_
 #| code-summary: Read and format data
 # Include and execute your code here
 
+Brit = df[df['name'] == 'Brittany'] 
 
 ```
 
