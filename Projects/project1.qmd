@@ -39,7 +39,9 @@ from datetime import datetime
 ## Elevator pitch
 
 _paste your elevator pitch here_
-_A SHORT (4-5 SENTENCES) PARAGRAPH THAT `DESCRIBES KEY INSIGHTS` TAKEN FROM METRICS IN THE PROJECT RESULTS THINK TOP OR MOST IMPORTANT RESULTS._
+_Let's look at how names have changed over time. For instance, the name Travis wasn't very common until 1910, but by 1990, it became really popular. After that, it dropped off quite a bit. If you meet someone named Brittany, they're probably around 35, based on what the data tells us. It's harder to get exact numbers due to data limitations, though._
+
+_When we look at Christian names like Mary, Martha, Peter, and Paul, there's a clear decline starting around 1956. It's interesting to think about why these names became less popular. And if you're curious about the influence of movies on names, look at Maverick from 'Top Gun'. It was almost forgotten, but after the movie came out, it started to get popular again. This data really shows how our culture and trends change over time_
 
 ```{python}
 #| label: project data
