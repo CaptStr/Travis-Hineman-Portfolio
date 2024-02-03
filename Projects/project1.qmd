@@ -334,16 +334,6 @@ fig3.show()
 ```
 
 
-```{python}
-#| label: Q3 table
-#| code-summary: table example
-#| tbl-cap: "Not much of a table"
-#| tbl-cap-location: top
-# Include and execute your code here
-
-
-```
-
 
 ## QUESTION|TASK 4
 
@@ -441,12 +431,3 @@ fig3.show()
 ```
 
 
-```{python}
-#| label: Q4 table
-#| code-summary: table example
-#| tbl-cap: "Not much of a table"
-#| tbl-cap-location: top
-# Include and execute your code here
-
-
-```
