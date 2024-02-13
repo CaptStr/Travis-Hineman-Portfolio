@@ -32,13 +32,15 @@ import pandas as pd
 import numpy as np
 import plotly.express as px
 from pandasgui import show
+from datetime import datetime
 ```
 
 
 ## Elevator pitch
 
-_paste your elevator pitch here_
-_A SHORT (4-5 SENTENCES) PARAGRAPH THAT `DESCRIBES KEY INSIGHTS` TAKEN FROM METRICS IN THE PROJECT RESULTS THINK TOP OR MOST IMPORTANT RESULTS._
+_Let's look at how names have changed over time. For instance, the name Travis wasn't very common until 1910, but by 1990, it became really popular. After that, it dropped off quite a bit. If you meet someone named Brittany, they're probably around 35, based on what the data tells us. It's harder to get exact numbers due to data limitations, though._
+
+_When we look at Christian names like Mary, Martha, Peter, and Paul, there's a clear decline starting around 1956. It's interesting to think about why these names became less popular. And if you're curious about the influence of movies on names, look at Maverick from 'Top Gun'. It was almost forgotten, but after the movie came out, it started to get popular again. This data really shows how our culture and trends change over time_
 
 ```{python}
 #| label: project data
@@ -89,7 +91,7 @@ fig = px.line(
     x = 'year', 
     y = 'Total',
     title = 'Travis Name Usage Trends since 1910',
-    markers = True, 
+    markers = False, 
     line_shape = 'spline'
 ) 
 fig.add_scatter(
@@ -152,142 +154,281 @@ fig.show()
 
 __If you talked to someone named Brittany on the phone, what is your guess of his or her age? What ages would you not guess?__
 
-_type your results and analysis here_
+_Our analysis has proved, through the chart, that the age of most Brittanys are at this date is 35. Additionally, it would be safe to assume that most Brittanys are also within 30 to 40 years old. On that note, I found it difficult to get a good mean and standard deviation due to the design of the data and my stuggles collecting a mean passed on occurrences._
 
 ```{python}
 #| label: Q2
 #| code-summary: Read and format data
 # Include and execute your code here
+brit = df[df['name'] == 'Brittany'] 
+c_yr = datetime.now().year
 
-Brit = df[df['name'] == 'Brittany'] 
-
+brit['Age'] = c_yr - brit['year']
+#show(brit)
+peak2 = brit[brit['Age'] == 34]
 ```
 
-_include figures in chunks and discuss your findings in the figure._
+
 
 ```{python}
 #| label: Q2 chart
-#| code-summary: plot example
-#| fig-cap: "My useless chart"
+#| code-summary: Code
+#| fig-cap: "This Chart demonstrates the ages of Brittanys in the United States"
 #| fig-align: center
 # Include and execute your code here
-chart = px.bar(df.head(200),
-    x="name", 
-    y="AK"
+fig2 = px.line(
+    brit, 
+    x = 'Age', 
+    y = 'Total',
+    title = 'Most Likely Age of a Brittany',
+    markers = False, 
+    line_shape = 'spline'
 )
-chart.show()
+fig2.add_scatter(
+    x=peak2['Age'], 
+    y=peak2['Total'],
+    mode='markers', 
+    marker=dict(color='darkgoldenrod', size=10),
+    showlegend=False
+)
+fig2.add_annotation(
+    x=peak2['Age'].iloc[0] + 1, 
+    y=peak2['Total'].iloc[0] + 1000, 
+    text="Peak",
+    showarrow=True,
+    arrowhead=1,
+    ax=20,  
+    ay=-30,
+    arrowcolor="darkgoldenrod",
+    font= dict(color="darkgoldenrod")
+)
+fig2.update_layout(
+    plot_bgcolor = 'white',
+    xaxis_title = 'Age',
+    yaxis_title = 'Total', 
+    title_x = 0.5,
+    title_font = dict(size = 24)
+)
+fig2.update_xaxes( 
+    showgrid = True, 
+    gridcolor = 'lightgray'
+) 
+fig2.update_yaxes(
+    showgrid=True,  
+    gridcolor='lightgray'  
+)
+
+fig2.show()
 ```
 
-
-```{python}
-#| label: Q2 table
-#| code-summary: table example
-#| tbl-cap: "Not much of a table"
-#| tbl-cap-location: top
-# Include and execute your code here
-mydat = df.head(1000)\
-    .groupby('year')\
-    .sum()\
-    .reset_index()\
-    .tail(10)\
-    .filter(["year", "AK","AR"])
-
-display(mydat)
-
-```
 
 
 ## QUESTION|TASK 3
 
 __Mary, Martha, Peter, and Paul are all Christian names. From 1920 - 2000, compare the name usage of each of the four names. What trends do you notice?__
 
-_type your results and analysis here_
+_In the chart below, we have the opportunity to see the peak trends of all the some of the major christian names. More interesting, is that by 1956, all the Christian names start to see trend that continue to decrease accross the board. This poses the question of what was occurring in the United States culture that has led to varing type of decreases. Also interesting is that Paul saw an increase starting in 1936 until its peak. The greates change in trends would be Mary, who saw a decrease of 47,607 from 1950 to 1999. As a result I conclude that christian names are on a decreasing trend._
 
 ```{python}
 #| label: Q3
 #| code-summary: Read and format data
 # Include and execute your code here
-
-
+chris = df[
+    (df['name'] == 'Mary') |
+    (df['name'] == 'Martha') |
+    (df['name'] == 'Peter') |
+    (df['name'] == 'Paul')
+] 
+chris = chris[
+    (chris['year'] >= 1920) & 
+    (chris['year'] <= 2000)
+]
+mpeak = chris[
+    (chris['year'] == 1950) &
+    (chris['name'] == 'Mary')
+]
+ppeak = chris[
+    (chris['year'] == 1954) &
+    (chris['name'] == 'Paul')
+]
+peakm = chris[
+    (chris['year'] == 1947) &
+    (chris['name'] == 'Martha')
+]
+peakp = chris[
+    (chris['year'] == 1956) &
+    (chris['name'] == 'Peter')
+]
+#show(chris)
 ```
 
-_include figures in chunks and discuss your findings in the figure._
 
 ```{python}
 #| label: Q3 chart
-#| code-summary: plot example
-#| fig-cap: "My useless chart"
+#| code-summary: code
+#| fig-cap: "This Chart to demonstrates the use of Christian names from 1900 to 2000 in the United States"
 #| fig-align: center
-# Include and execute your code here
-chart = px.bar(df.head(200),
-    x="name", 
-    y="AK"
+
+fig3 = px.line(
+    chris, 
+    x = 'year', 
+    y = 'Total',
+    color='name',
+    title = 'Christian Names Trends from 1920 - 2000',
+    markers = False, 
+    line_shape = 'spline'
 )
-chart.show()
+fig3.add_scatter(
+    x=mpeak['year'], 
+    y=mpeak['Total'],
+    mode='markers', 
+    marker=dict(color='darkgoldenrod', size=10),
+    showlegend=False
+)
+fig3.add_scatter(
+    x=ppeak['year'], 
+    y=ppeak['Total'],
+    mode='markers', 
+    marker=dict(color='darkgoldenrod', size=10),
+    showlegend=False
+)
+fig3.add_scatter(
+    x=peakp['year'], 
+    y=peakp['Total'],
+    mode='markers', 
+    marker=dict(color='darkgoldenrod', size=10),
+    showlegend=False
+)
+fig3.add_scatter(
+    x=peakm['year'], 
+    y=peakm['Total'],
+    mode='markers', 
+    marker=dict(color='darkgoldenrod', size=10),
+    showlegend=False
+)
+fig3.add_annotation(
+    x=1953, 
+    y=55000,
+    text="Peaks",
+    showarrow=False,
+    xshift=10,
+    font= dict(color="darkgoldenrod")  
+)
+fig3.update_layout(
+    plot_bgcolor = 'white',
+    xaxis_title = 'Year',
+    yaxis_title = 'Total', 
+    title_x = 0.5,
+    title_font = dict(size = 24),
+    legend_title_text='Names'
+)
+fig3.update_xaxes( 
+    showgrid = True, 
+    gridcolor = 'lightgray'
+) 
+fig3.update_yaxes(
+    showgrid=True,  
+    gridcolor='lightgray'  
+)
+
+fig3.show()
 ```
 
-
-```{python}
-#| label: Q3 table
-#| code-summary: table example
-#| tbl-cap: "Not much of a table"
-#| tbl-cap-location: top
-# Include and execute your code here
-mydat = df.head(1000)\
-    .groupby('year')\
-    .sum()\
-    .reset_index()\
-    .tail(10)\
-    .filter(["year", "AK","AR"])
-
-display(mydat)
-
-```
 
 
 ## QUESTION|TASK 4
 
 __Think of a unique name from a famous movie. Plot the usage of that name and see how changes line up with the movie release. Does it look like the movie had an effect on usage?__
 
-_type your results and analysis here_
+_For a famous movie, I chose to do Maverick from Top Gun. As a result, I got to see an interesting trend. At the start of the data, Maverick was a rarely used name, infact, from 1961 to 1986, there were no new names of Maverick. That is when the first Top Gun movie is released. The movie resurrects the name and from there that name increases to over 2000 until the end of the dataset._
 
 ```{python}
 #| label: Q4
 #| code-summary: Read and format data
 # Include and execute your code here
-
-
+Maverick = df[
+    (df['name'] == 'Maverick') &
+    (df['year'] > 1950)
+]
+# show(Maverick)
 ```
 
-_include figures in chunks and discuss your findings in the figure._
+
 
 ```{python}
 #| label: Q4 chart
-#| code-summary: plot example
-#| fig-cap: "My useless chart"
+#| code-summary: code
+#| fig-cap: "This chart shows the trends of the data of the name of Maverick in relation to the first Top Gun movie"
 #| fig-align: center
 # Include and execute your code here
-chart = px.bar(df.head(200),
-    x="name", 
-    y="AK"
+fig3 = px.line(
+    Maverick, 
+    x = 'year', 
+    y = 'Total',
+    title = 'Top Gun Name Maverick',
+    markers = False, 
+    line_shape = 'spline'
 )
-chart.show()
+fig3.add_annotation(
+    x=1987, 
+    y= 1100, 
+    text="1st Movie Release",
+    showarrow=True,
+    arrowhead=1,
+    ax=80,  
+    ay=-30,
+    arrowcolor="red",
+    font= dict(color="red")
+)
+fig3.add_vline(
+    x=1986, 
+    line_width=2, 
+    line_dash="dash", 
+    line_color="red"
+)
+fig3.add_scatter(
+    x=[1961], 
+    y=[1],
+    mode='markers', 
+    marker=dict(color='darkgoldenrod', size=10),
+    showlegend=False
+)
+fig3.add_scatter(
+    x=[1986], 
+    y=[1],
+    mode='markers', 
+    marker=dict(color='darkgoldenrod', size=10),
+    showlegend=False
+)
+fig3.add_annotation(
+    x=1970, 
+    y= 2, 
+    text="0 Named Maverick",
+    showarrow=True,
+    arrowhead=1,
+    ax=20,  
+    ay=-30,
+    arrowcolor="darkgoldenrod",
+    font= dict(color="darkgoldenrod")
+)
+fig3.update_layout(
+    plot_bgcolor = 'white',
+    xaxis_title = 'Year',
+    yaxis_title = 'Total', 
+    title_x = 0.5,
+    title_font = dict(size = 24),
+    legend_title_text='Names'
+)
+fig3.update_xaxes( 
+    showgrid = True, 
+    gridcolor = 'lightgray'
+) 
+fig3.update_yaxes(
+    showgrid=True,  
+    gridcolor='lightgray'  
+)
+
+fig3.show()
 ```
 
 
-```{python}
-#| label: Q4 table
-#| code-summary: table example
-#| tbl-cap: "Not much of a table"
-#| tbl-cap-location: top
-# Include and execute your code here
-mydat = df.head(1000)\
-    .groupby('year')\
-    .sum()\
-    .reset_index()\
-    .tail(10)\
-    .filter(["year", "AK","AR"])
-
-display(mydat)
-
-```
