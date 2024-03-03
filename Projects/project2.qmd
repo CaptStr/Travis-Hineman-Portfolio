@@ -43,7 +43,8 @@ _A SHORT (4-5 SENTENCES) PARAGRAPH THAT `DESCRIBES KEY INSIGHTS` TAKEN FROM METR
 #| label: project data
 #| code-summary: Read and format project data
 # Include and execute your code here
-df = pd.read_csv("https://github.com/byuidatascience/data4names/raw/master/data-raw/names_year/names_year.csv")
+df = pd.read_json("https://github.com/byuidatascience/data4missing/raw/master/data-raw/flights_missing/flights_missing.json")
+show(df)
 ```
 
 __Highlight the Questions and Tasks__
@@ -56,13 +57,49 @@ _type your results and analysis here_
 
 ```{python}
 #| label: Q1
-#| code-summary: Read and format data
+#| code-summary: Fix data Types and replace missing values with NaN
 # Include and execute your code here
 
+# Dictionary mapping airport codes to names
+airport_codes = {
+    'ATL': 'Atlanta, GA: Hartsfield-Jackson Atlanta International',
+    'DEN': 'Denver, CO: Denver International',
+    'IAD': 'Washington, DC: Washington Dulles International',
+    'ORD': 'Chicago, IL: Chicago O\'Hare International',
+    'SAN': 'San Diego, CA: San Diego International',
+    'SFO': 'San Francisco, CA: San Francisco International',
+    'SLC': 'Salt Lake City, UT: Salt Lake City International'
+}
 
+# Modified Function to fill missing airport names
+def fill_airport_name(row):
+    # Check for NaN or empty string (after stripping spaces)
+    if pd.isna(row['airport_name']) or row['airport_name'].strip() == '':
+        return airport_codes.get(row['airport_code'], None)
+    return row['airport_name']
+
+# Apply the function
+df['airport_name'] = df.apply(fill_airport_name, axis=1)
+
+#Remove the ".0" in the year columns
+df['year'] = df['year'].fillna(0).astype(int)
+
+# Replace 0 back with NaN if needed
+df['year'].replace(0, pd.NA, inplace=True)
+
+#Replace Empty Values with NaN
+df.fillna('NaN', inplace=True)
+
+# Replace '+' at the end of strings in 'num_of_delays_carrier' column
+# df['num_of_delays_carrier'] = df['num_of_delays_carrier'].str.replace(r'\+$', '', regex=True)
+
+# # Convert the column to integer
+# df['num_of_delays_carrier'] = pd.to_numeric(df['num_of_delays_carrier'], errors='coerce').astype('Int64')
+
+
+show(df)
 ```
 
-_include figures in chunks and discuss your findings in the figure._
 
 ```{python}
 #| label: Q1 chart
@@ -70,30 +107,10 @@ _include figures in chunks and discuss your findings in the figure._
 #| fig-cap: "My useless chart"
 #| fig-align: center
 # Include and execute your code here
-chart = px.bar(df.head(200),
-    x="name", 
-    y="AK"
-)
-chart.show()
-```
-
-
-```{python}
-#| label: Q1 table
-#| code-summary: table example
-#| tbl-cap: "Not much of a table"
-#| tbl-cap-location: top
-# Include and execute your code here
-mydat = df.head(1000)\
-    .groupby('year')\
-    .sum()\
-    .reset_index()\
-    .tail(10)\
-    .filter(["year", "AK","AR"])
-
-display(mydat)
 
 ```
+
+
 
 
 ## QUESTION|TASK 2
