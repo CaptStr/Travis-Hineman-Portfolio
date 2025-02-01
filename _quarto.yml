@@ -27,7 +27,7 @@ website:
       - text: "My Resume"
         file: resume.qmd
       - text: "Python Projects"
-        file: Project/Python/python_projects.qmd
+        file: Projects/Python/python_projects.qmd
       - text: "Excel Projects"
         file: Projects/Excel/excel_projects.qmd
       - text: "Power Bi"
@@ -42,10 +42,10 @@ website:
           file: Projects/Python/python_projects.qmd
         - text: "---"
         - text: "Project 0"
-          file: Project/Python/project0.qmd
+          file: Projects/Python/project0.qmd
         - text: "---"
         - text: "Project 1"
-          file: Project/Python/project1.qmd
+          file: Projects/Python/project1.qmd
         - text: "---"
         
     - title: "Excel Projects"
