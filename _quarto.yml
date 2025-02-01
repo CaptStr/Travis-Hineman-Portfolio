@@ -1,13 +1,82 @@
 project:
   type: website
+  output-dir: docs/
 
 website:
   title: "Travis-Hineman-Portfolio"
+  favicon: Images/favicon.png
+  back-to-top-navigation: true
+  repo-url: https://github.com/your_url
+  repo-actions: [issue] 
+
+  page-footer: 
+    border: true
+    left: "Travis Hineman 2024©"
+    right: 
+      - icon: linkedin
+        href: www.linkedin.com/in/travis-hineman
+  
+  
   navbar:
-    left:
-      - href: index.qmd
-        text: Home
-      - about.qmd
+    background: primary
+    search: true   
+    right:
+      - text: "Home"
+        file: index.qmd
+      - text: "About"
+        file: about.qmd
+      - text: "My Resume"
+        file: resume.qmd
+      - text: "Python Projects"
+        file: python_projects.qmd
+      - text: "Excel Projects"
+        file: excel_projects.qmd
+      - text: "Power Bi"
+        file: powerbi_projects.qmd
+        
+  sidebar:
+    - title: "Python Projects"
+      style: "docked"
+      background: light
+      contents:
+        - text: "Python Projects"
+          file: python_projects.qmd
+        - text: "---"
+        - text: "Project 0"
+          file: python_projects/project0.qmd
+        - text: "---"
+        - text: "Project 1"
+          file: python_projects/project1.qmd
+        - text: "---"
+        
+    - title: "Excel Projects"
+      style: "docked"
+      background: light
+      contents:
+        - text: "Excel Projects"
+          file: excel_projects.qmd
+        - text: "---"
+        - text: "Project 0"
+          file: excel_projects/project0.qmd
+        - text: "---"
+        - text: "Project 1"
+          file: excel_projects/project1.qmd
+        - text: "---"
+
+    - title: "Power Bi Projects"
+      style: "docked"
+      background: light
+      contents:
+        - text: "Power Bi Projects"
+          file: powerbi_projects.qmd
+        - text: "---"
+        - text: "Project 0"
+          file: powerbi_projects/project0.qmd
+        - text: "---"
+        - text: "Project 1"
+          file: powerbi_projects/project1.qmd
+        - text: "---"
+
 
 format:
   html:
