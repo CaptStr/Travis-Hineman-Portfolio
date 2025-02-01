@@ -16,7 +16,6 @@ website:
       - icon: linkedin
         href: www.linkedin.com/in/travis-hineman
   
-  
   navbar:
     background: primary
     search: true   
@@ -28,11 +27,11 @@ website:
       - text: "My Resume"
         file: resume.qmd
       - text: "Python Projects"
-        file: python_projects.qmd
+        file: Project/Python/python_projects.qmd
       - text: "Excel Projects"
-        file: excel_projects.qmd
+        file: Projects/Excel/excel_projects.qmd
       - text: "Power Bi"
-        file: powerbi_projects.qmd
+        file: Projects/PowerBi/powerbi_projects.qmd
         
   sidebar:
     - title: "Python Projects"
@@ -40,13 +39,13 @@ website:
       background: light
       contents:
         - text: "Python Projects"
-          file: python_projects.qmd
+          file: Projects/Python/python_projects.qmd
         - text: "---"
         - text: "Project 0"
-          file: python_projects/project0.qmd
+          file: Project/Python/project0.qmd
         - text: "---"
         - text: "Project 1"
-          file: python_projects/project1.qmd
+          file: Project/Python/project1.qmd
         - text: "---"
         
     - title: "Excel Projects"
@@ -54,13 +53,13 @@ website:
       background: light
       contents:
         - text: "Excel Projects"
-          file: excel_projects.qmd
+          file: Projects/Excel/excel_projects.qmd
         - text: "---"
         - text: "Project 0"
-          file: excel_projects/project0.qmd
+          file: Projects/Excel/project0.qmd
         - text: "---"
         - text: "Project 1"
-          file: excel_projects/project1.qmd
+          file: Projects/Excel/project1.qmd
         - text: "---"
 
     - title: "Power Bi Projects"
@@ -68,13 +67,13 @@ website:
       background: light
       contents:
         - text: "Power Bi Projects"
-          file: powerbi_projects.qmd
+          file: Projects/PowerBi/powerbi_projects.qmd
         - text: "---"
         - text: "Project 0"
-          file: powerbi_projects/project0.qmd
+          file: Projects/PowerBi/project0.qmd
         - text: "---"
         - text: "Project 1"
-          file: powerbi_projects/project1.qmd
+          file: Projects/PowerBi/project1.qmd
         - text: "---"
 
 
