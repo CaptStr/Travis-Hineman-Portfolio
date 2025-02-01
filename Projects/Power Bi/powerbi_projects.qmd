@@ -1,0 +1,9 @@
+---
+title: "Power Bi Projects"
+subtitle: "Repe for all my Projects"
+---
+
+## Repo for all my Projects
+
+-   [Project 0](/powerbi_projects/project0.qmd)
+-   [Project 1](/powerbi_projects/project1.qmd)

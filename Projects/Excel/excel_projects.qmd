@@ -1,0 +1,10 @@
+---
+title: "Excel Projects"
+subtitle: "Repo for all my Projects"
+# use quarto markdown to 
+---
+
+## Repo for all my Projects
+
+-   [Project 0](/excel_projects/project0.qmd)
+-   [Project 1](/excel_projects/project1.qmd)

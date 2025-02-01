@@ -1,0 +1,53 @@
+---
+title: "Resume"
+description: "Professional experience, education, and skills overview."
+---
+
+
+## Travis Hineman  
+📞 (571) 442-7090 | ✉️ [travishineman85@gmail.com](mailto:travishineman85@gmail.com) | [LinkedIn](https://linkedin.com/in/travis-hineman)
+
+---
+
+## Education  
+**Bachelors of Science, Business Analytics**  
+Brigham Young University - Idaho, Rexburg, ID  
+**Sep 2019 - Dec 2024**  
+- Created actionable insights from complex datasets to support data-driven decision-making.
+- Leveraged tools such as **R, Python, SQL, Excel, Power BI, and Tableau** to analyze data, create visualizations, and develop business intelligence solutions.
+- Provided clear insights and guided informed decisions across multiple projects.
+
+---
+
+## Work Experience  
+### **Team Member**  
+**Dairy Queen, Rigby, ID**  
+**Jun 2024 - Present**  
+- Performed food prep, cashiering, and inventory in 5–9 hour shifts, strictly following food safety standards, cutting down customer wait times by 10% in a high-demand environment.
+- Delivered accurate, friendly service to over **150 customers daily** by handling orders and transactions swiftly, enhancing overall customer satisfaction.
+
+### **Business Analytics Intern**  
+**Idaho Dart Arena, Rigby, ID**  
+**Oct 2024 - Dec 2024**  
+- Explored and analyzed operational data, collaborating with a teammate to identify solutions for balancing income and expenses, resulting in a **10% improvement** in arena utilization rates.
+- Uncovered inefficiencies in renting practices and proposed a **co-renting arrangement** that increased revenue.
+- Proposed solutions with a teammate 2-3 times a week to tackle technological issues related to publishing reports.
+
+### **Amazon DSP Delivery Driver**  
+**Metropolitan Logistics, Sterling, VA**  
+**Jul 2022 - Dec 2022**  
+- Efficiently managed time during **10-hour shifts** to ensure timely deliveries.
+- Maintained attention to detail and compliance within delivery/transportation services.
+
+### **Service Volunteer**  
+**Church of Jesus Christ of Latter-Day Saints, Tijuana, MX**  
+**Aug 2017 - Aug 2019**  
+- Engaged in **daily community outreach**, using intermediate Spanish to build relationships and support local residents.
+- Organized and led **educational workshops**, teaching life principles and English skills to groups of **3 to 10**.
+- Analyzed and compiled **weekly reports on key performance metrics** from over **200 volunteers**, improving decision-making and resource allocation.
+
+---
+
+## Extra-Curricular Activities  
+- **Boy Scouts of America** - Eagle Scout, 4 Palms.
+- **Civil Air Patrol** - Staff Sergeant.

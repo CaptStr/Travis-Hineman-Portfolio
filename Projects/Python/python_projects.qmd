@@ -1,0 +1,10 @@
+---
+title: "Python Projects"
+subtitle: "Repo for all my Projects"
+# use quarto markdown to 
+---
+
+## Repo for all my Projects
+
+-   [Project 0](/python_projects/project0.qmd)
+-   [Project 1](/python_projects/project1.qmd)

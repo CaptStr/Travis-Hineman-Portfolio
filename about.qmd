@@ -1,5 +1,32 @@
 ---
 title: "About"
+description: "Learn more about my background, skills, and career aspirations."
 ---
 
-About this site
+## About Me
+
+### Introduction & Background
+Hello! My name is Travis, and I am a Business Analytics major at Brigham Young University - Idaho. My passion for data-driven decision-making led me to explore the fields of analytics, programming, and visualization. I am eager to expand my knowledge and apply my skills in real-world scenarios.
+
+### Skills & Expertise
+I have experience in:
+- **Python** for data analysis, automation, and visualization
+- **SQL** for database querying and management
+- **Excel** for financial modeling and data manipulation
+- **Power BI** for creating insightful dashboards and reports
+
+I am continuously learning and refining my abilities to stay up to date with the latest trends in analytics and data science.
+
+### Projects & Achievements
+Some of my key projects include:
+- [Project Name]: [Brief description of the project and its impact]
+- [Project Name]: [Brief description of the project and its impact]
+- [Project Name]: [Brief description of the project and its impact]
+
+### Career Goals & Aspirations
+I aspire to work in a dynamic environment where I can leverage data analytics to drive business success. My goal is to become a proficient data analyst or business intelligence professional, making data accessible and actionable for decision-makers.
+
+### Personal Interests
+Outside of analytics, I enjoy [hobbies/interests], staying up to date with industry trends, and engaging with the data science community.
+
+Feel free to connect with me and explore my projects!

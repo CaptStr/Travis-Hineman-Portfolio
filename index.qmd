@@ -1,7 +1,20 @@
 ---
-title: "Travis-Hineman-Portfolio"
+title: "Home - Business Analytics Portfolio"
+description: "Showcasing my skills and projects in Python, SQL, Excel, and Power BI"
+author: "[Your Name]"
 ---
 
-This is a Quarto website.
+## Welcome to My GitHub Portfolio
 
-To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
+Hello and welcome to my GitHub portfolio! My name is [Your Name], and I am a Business Analytics major at Brigham Young University - Idaho. I am passionate about leveraging data to drive informed business decisions and continuously expanding my skill set in data analytics.
+
+### About Me
+I specialize in:
+- **Python** for data analysis, automation, and visualization
+- **SQL** for database management and querying
+- **Excel** for financial modeling and data manipulation
+- **Power BI** for creating dynamic and insightful dashboards
+
+As I continue my journey in data analytics, I am excited to apply my skills in real-world projects, collaborate with like-minded professionals, and explore innovative solutions to business challenges. 
+
+Feel free to explore my projects, connect with me, and follow my progress as I develop my expertise. Let's learn and grow together!
