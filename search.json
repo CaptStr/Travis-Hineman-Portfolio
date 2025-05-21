@@ -98,6 +98,13 @@
     "text": "Hello! My name is Travis, and I am a Business Analytics major at Brigham Young University - Idaho. My passion for data-driven decision-making led me to explore the fields of analytics, programming, and visualization. I am eager to expand my knowledge and apply my skills in real-world scenarios.\n\n\n\nI have experience in: - Python for data analysis, automation, and visualization - SQL for database querying and management - Excel for financial modeling and data manipulation - Power BI for creating insightful dashboards and reports\nI am continuously learning and refining my abilities to stay up to date with the latest trends in analytics and data science.\n\n\n\nSome of my key projects include: - [Project Name]: [Brief description of the project and its impact] - [Project Name]: [Brief description of the project and its impact] - [Project Name]: [Brief description of the project and its impact]\n\n\n\nI aspire to work in a dynamic environment where I can leverage data analytics to drive business success. My goal is to become a proficient data analyst or business intelligence professional, making data accessible and actionable for decision-makers.\n\n\n\nOutside of analytics, I enjoy [hobbies/interests], staying up to date with industry trends, and engaging with the data science community.\nFeel free to connect with me and explore my projects!"
   },
   {
+    "objectID": "Data.Collection.html",
+    "href": "Data.Collection.html",
+    "title": "Brain storming",
+    "section": "",
+    "text": "#Income Expense Data set as a Housedhold \nimport kagglehub\n\n# Download latest version\npath = kagglehub.dataset_download(\"ramyapintchy/personal-finance-data\")\n\nprint(\"Path to dataset files:\", path)\nI might want to make this a business Finanacial dashboard, and instead use a data set that reflects this as well. I should find some sort of corporate data set so I can break into Ratios dealing with debt, ROI and Liquidity.\n\n\n\n Back to top"
+  },
+  {
     "objectID": "Projects/Excel/excel_projects.html",
     "href": "Projects/Excel/excel_projects.html",
     "title": "Excel Projects",
@@ -121,14 +128,21 @@
   {
     "objectID": "Projects/PowerBi/project0.html",
     "href": "Projects/PowerBi/project0.html",
-    "title": "Travis-Hineman-Portfolio",
+    "title": "Data Professionals Survey Dashboard",
     "section": "",
-    "text": "Back to top"
+    "text": "Below is my interactive survey analysis dashboard created in Power BI and embedded directly on this page."
+  },
+  {
+    "objectID": "Projects/PowerBi/project0.html#interactive-power-bi-dashboard",
+    "href": "Projects/PowerBi/project0.html#interactive-power-bi-dashboard",
+    "title": "Data Professionals Survey Dashboard",
+    "section": "",
+    "text": "Below is my interactive survey analysis dashboard created in Power BI and embedded directly on this page."
   },
   {
     "objectID": "Projects/Python/project0.html",
     "href": "Projects/Python/project0.html",
-    "title": "Travis-Hineman-Portfolio",
+    "title": "Project 0",
     "section": "",
     "text": "Back to top"
   },
