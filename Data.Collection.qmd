@@ -1,0 +1,15 @@
+---
+title: Brain storming
+---
+
+``` python
+#Income Expense Data set as a Housedhold 
+import kagglehub
+
+# Download latest version
+path = kagglehub.dataset_download("ramyapintchy/personal-finance-data")
+
+print("Path to dataset files:", path)
+```
+
+I might want to make this a business Finanacial dashboard, and instead use a data set that reflects this as well. I should find some sort of corporate data set so I can break into Ratios dealing with debt, ROI and Liquidity.
