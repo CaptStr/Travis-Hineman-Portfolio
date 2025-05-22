@@ -55,7 +55,7 @@ website:
         - text: "Excel Projects"
           file: Projects/Excel/excel_projects.qmd
         - text: "---"
-        - text: "Project 0"
+        - text: "Bike Sales Dashboard"
           file: Projects/Excel/project0.qmd
         - text: "---"
         - text: "Project 1"
@@ -69,7 +69,7 @@ website:
         - text: "Power Bi Projects"
           file: Projects/PowerBi/powerbi_projects.qmd
         - text: "---"
-        - text: "Project 0"
+        - text: "Data Professional Dashboard"
           file: Projects/PowerBi/project0.qmd
         - text: "---"
         - text: "Project 1"
