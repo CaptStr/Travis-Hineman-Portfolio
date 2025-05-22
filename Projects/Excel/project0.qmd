@@ -1,0 +1,18 @@
+---
+title: "Excel Dashboard - Sales Performance"
+format: html
+---
+
+## 📈 Excel Dashboard Embed
+
+This interactive Excel dashboard displays quarterly sales performance.
+
+
+<div style="text-align:center;">
+  <iframe src="https://1drv.ms/x/c/f6b4f4963c59829e/IQRbTSs3ZobAQ6UYw-OSe8iyAYGuQk8-LFksjttB4H_GhJ8?em=2&wdHideGridlines=True&wdHideHeaders=True&wdDownloadButton=True&wdInConfigurator=True&wdInConfigurator=True"
+          width="1300" height="900"
+          scrolling="no"
+          frameborder="0">
+  </iframe>
+</div>
+
