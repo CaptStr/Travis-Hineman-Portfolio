@@ -41,7 +41,7 @@ website:
         - text: "Python Projects"
           file: Projects/Python/python_projects.qmd
         - text: "---"
-        - text: "Project 0"
+        - text: "Star Wars Customers Analysis"
           file: Projects/Python/project0.qmd
         - text: "---"
         - text: "Project 1"
