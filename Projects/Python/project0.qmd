@@ -1,3 +1,232 @@
 ---
-title: Project 0
+title: "Client Report - [Insert Project Title]"
+format:
+  html:
+    self-contained: true
+    page-layout: full
+    title-block-banner: true
+    toc: true
+    toc-depth: 3
+    toc-location: body
+    number-sections: false
+    html-math-method: katex
+    code-fold: true
+    code-summary: "Show the code"
+    code-overflow: wrap
+    code-copy: hover
+    code-tools:
+        source: false
+        toggle: true
+        caption: See code
+execute: 
+  warning: false
+    
 ---
+
+```{python}
+#| label: libraries
+#| include: false
+import pandas as pd
+import numpy as np
+import plotly.express as px
+from pandasgui import show
+```
+
+
+## Elevator pitch
+
+_paste your elevator pitch here_
+_A SHORT (4-5 SENTENCES) PARAGRAPH THAT `DESCRIBES KEY INSIGHTS` TAKEN FROM METRICS IN THE PROJECT RESULTS THINK TOP OR MOST IMPORTANT RESULTS._
+
+```{python}
+#| label: project data
+#| code-summary: Read and format project data
+# Include and execute your code here
+url = "https://raw.githubusercontent.com/fivethirtyeight/data/master/star-wars-survey/StarWars.csv"
+df = pd.read_csv(url, encoding='ISO-8859-1')  # or try 'latin1'
+# print(df.head())
+```
+
+__Highlight the Questions and Tasks__
+
+## QUESTION|TASK 1
+
+__COPY PASTE QUESTION|TASK 1 FROM THE PROJECT HERE__
+
+_type your results and analysis here_
+
+```{python}
+#| label: Data Cleaning 
+#| code-summary: Read and format data
+# Include and execute your code here
+
+# Remove the Second Row as it is unnecessary 
+df = df.iloc[1:, :]
+#Rename the columns
+df.columns = ['RespondentID', 
+        'seen_any', 
+        'sw_fan',
+        'seen_first',
+        'seen_second',
+        'seen_third',
+        'seen_fourth',
+        'seen_fifth',
+        'seen_sixth',
+        'rank_1',
+        'rank_2',
+        'rank_3',
+        'rank_4',
+        'rank_5',
+        'rank_6',
+        'Han_Solo',
+        'Luke_Skywalker',
+        'Leia_Organa',
+        'Anakin_Skywalker',
+        'Obi_Wan_Kenobi',
+        'Emperor_Palpatine',
+        'Darth_Vader',
+        'Lando_Calrissian',
+        'Boba_Fett',
+        'C-3P0',
+        'R2_D2',
+        'Jar_Jar_Binks',
+        'Padme_Amidala',
+        'Yoda',
+        'shot_first',
+        'knows_expand_universe',
+        'fan_expand_universe',
+        'star_trek_fan',
+        'gender',
+        'age',
+        'income',
+        'education',
+        'region'
+        ]
+
+# Define Boolean Conversion Function
+def to_bool(cell):
+    return int(
+            bool(
+                str(
+                    cell
+                ).strip()
+            )
+    )
+
+# Columns to Convert
+bool_columns = [
+    'sw_fan',
+    'star_trek_fan',
+    'seen_first',
+    'seen_second',
+    'seen_third',
+    'seen_fourth',
+    'seen_fifth',
+    'seen_sixth',
+    'knows_expand_universe',
+    'fan_expand_universe'
+]
+
+# Convert Columns 
+for col in bool_columns:
+    df[col + '_bool'] = df[col].apply(to_bool)
+    
+# Create 
+print(df.head())
+```
+
+_include figures in chunks and discuss your findings in the figure._
+
+```{python}
+#| label: Q1 chart
+#| code-summary: plot example
+#| fig-cap: "My useless chart"
+#| fig-align: center
+# Include and execute your code here
+
+```
+
+
+```{python}
+#| label: Q1 table
+#| code-summary: table example
+#| tbl-cap: "Not much of a table"
+#| tbl-cap-location: top
+# Include and execute your code here
+
+
+```
+
+
+## QUESTION|TASK 2
+
+__COPY PASTE QUESTION|TASK 2 FROM THE PROJECT HERE__
+
+_type your results and analysis here_
+
+```{python}
+#| label: Q2
+#| code-summary: Read and format data
+# Include and execute your code here
+
+
+```
+
+_include figures in chunks and discuss your findings in the figure._
+
+```{python}
+#| label: Q2 chart
+#| code-summary: plot example
+#| fig-cap: "My useless chart"
+#| fig-align: center
+# Include and execute your code here
+
+```
+
+
+```{python}
+#| label: Q2 table
+#| code-summary: table example
+#| tbl-cap: "Not much of a table"
+#| tbl-cap-location: top
+# Include and execute your code here
+
+
+```
+
+
+## QUESTION|TASK 3
+
+__COPY PASTE QUESTION|TASK 3 FROM THE PROJECT HERE__
+
+_type your results and analysis here_
+
+```{python}
+#| label: Q3
+#| code-summary: Read and format data
+# Include and execute your code here
+
+
+```
+
+_include figures in chunks and discuss your findings in the figure._
+
+```{python}
+#| label: Q3 chart
+#| code-summary: plot example
+#| fig-cap: "My useless chart"
+#| fig-align: center
+# Include and execute your code here
+
+```
+
+
+```{python}
+#| label: Q3 table
+#| code-summary: table example
+#| tbl-cap: "Not much of a table"
+#| tbl-cap-location: top
+# Include and execute your code here
+
+
+```

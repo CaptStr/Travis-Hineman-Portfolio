@@ -6,5 +6,5 @@ subtitle: "Repo for all my Projects"
 
 ## Repo for all my Projects
 
--   [Project 0](project0.qmd)
+-   [Bike Sales Dashboard](project0.qmd)
 -   [Project 1](project1.qmd)

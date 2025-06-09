@@ -1,53 +1,78 @@
 ---
 title: "Resume"
-description: "Professional experience, education, and skills overview."
+format: html
+toc: false
+page-layout: full
+fontsize: 11pt
 ---
 
+# Travis Hineman
 
-## Travis Hineman  
-📞 (571) 442-7090 | ✉️ [travishineman85@gmail.com](mailto:travishineman85@gmail.com) | [LinkedIn](https://linkedin.com/in/travis-hineman)
+📞 (571) 442 7090 \| 📧 travishineman85\@gmail.com \| [LinkedIn](https://linkedin.com/in/travis-hineman)
 
----
+------------------------------------------------------------------------
 
-## Education  
-**Bachelors of Science, Business Analytics**  
-Brigham Young University - Idaho, Rexburg, ID  
-**Sep 2019 - Dec 2024**  
-- Created actionable insights from complex datasets to support data-driven decision-making.
-- Leveraged tools such as **R, Python, SQL, Excel, Power BI, and Tableau** to analyze data, create visualizations, and develop business intelligence solutions.
-- Provided clear insights and guided informed decisions across multiple projects.
+## EDUCATION
 
----
+**Bachelor of Science, Business Analytics**\
+*Brigham Young University - Idaho, Rexburg, ID*\
+*Sep 2019 – Dec 2024*
 
-## Work Experience  
-### **Team Member**  
-**Dairy Queen, Rigby, ID**  
-**Jun 2024 - Present**  
-- Performed food prep, cashiering, and inventory in 5–9 hour shifts, strictly following food safety standards, cutting down customer wait times by 10% in a high-demand environment.
-- Delivered accurate, friendly service to over **150 customers daily** by handling orders and transactions swiftly, enhancing overall customer satisfaction.
+-   Developed data-driven reports and visualizations on various business topics using Excel, Power BI, and Tableau, transforming raw data into actionable insights for strategic decision-making.\
+-   Balanced financial sheets and conducted accounting analyses using Excel, ensuring data accuracy to improve financial reporting.\
+-   Explored forecasting and financial planning techniques using Excel to optimize profit from interest, providing data-backed recommendations for financial strategy.\
+-   Analyzed business challenges and developed data-driven solutions using Python and R, leveraging statistical modeling and machine learning techniques to uncover trends and optimize decision-making.
 
-### **Business Analytics Intern**  
-**Idaho Dart Arena, Rigby, ID**  
-**Oct 2024 - Dec 2024**  
-- Explored and analyzed operational data, collaborating with a teammate to identify solutions for balancing income and expenses, resulting in a **10% improvement** in arena utilization rates.
-- Uncovered inefficiencies in renting practices and proposed a **co-renting arrangement** that increased revenue.
-- Proposed solutions with a teammate 2-3 times a week to tackle technological issues related to publishing reports.
+------------------------------------------------------------------------
 
-### **Amazon DSP Delivery Driver**  
-**Metropolitan Logistics, Sterling, VA**  
-**Jul 2022 - Dec 2022**  
-- Efficiently managed time during **10-hour shifts** to ensure timely deliveries.
-- Maintained attention to detail and compliance within delivery/transportation services.
+## WORK EXPERIENCE
 
-### **Service Volunteer**  
-**Church of Jesus Christ of Latter-Day Saints, Tijuana, MX**  
-**Aug 2017 - Aug 2019**  
-- Engaged in **daily community outreach**, using intermediate Spanish to build relationships and support local residents.
-- Organized and led **educational workshops**, teaching life principles and English skills to groups of **3 to 10**.
-- Analyzed and compiled **weekly reports on key performance metrics** from over **200 volunteers**, improving decision-making and resource allocation.
+**Business Analytics Intern**\
+*Idaho Dart Arena – Rigby, Idaho*\
+*Oct 2024 – Dec 2024*
 
----
+-   Explored and analyzed operational data at Idaho Dart Arena, collaborating with a teammate to identify solutions to balancing income and expenses, resulting in a 10% improvement in arena utilization rates.\
+-   Pioneered the company’s first-ever internship program by wrangling operational data using Python and Pandas, creating a structured data foundation for future analytical use and decision-making.\
+-   Developed the first business forecasting model by analyzing and visualizing operational data using Python, Pandas, and Plotly Express, identifying key market trends to drive strategic decision-making.\
+-   Proposed cost-saving solutions to address profit loss by initiating a shared facility rental strategy, leveraging forecasting analysis to project a 20% reduction in expenses.
 
-## Extra-Curricular Activities  
-- **Boy Scouts of America** - Eagle Scout, 4 Palms.
-- **Civil Air Patrol** - Staff Sergeant.
+**Team Member**\
+*Dairy Queen – Rigby, ID*\
+*Jun 2024 – Present*
+
+-   Led team initiatives to streamline closing procedures, reducing cleanup time by 15% through improved task delegation and efficiency strategies.\
+-   Proposed workflow adjustments in food preparation and order handling, reducing customer wait times by 27% and improving order accuracy, leading to increased customer satisfaction scores.\
+-   Optimized food preparation, cashier, and inventory management during 5–9 hour shifts by implementing efficient task prioritization, improving efficiency and reducing bottlenecks during peak hours.\
+-   Streamlined order processing and transaction handling for 150+ customers daily by improving workflow efficiency, enhancing customer satisfaction and overall service speed.
+
+------------------------------------------------------------------------
+
+## SKILLS
+
+**Technical**\
+- **Programming:** Python, R, SQL\
+- **Data Analysis & Visualization:** Power BI, Tableau, Excel (Pivot Tables, Financial Modeling), Pandas, Plotly Express\
+- **Financial & Accounting Tools:** Budgeting & Forecasting
+
+**Hard Skills**\
+- Data Cleaning & Processing\
+- Business & Financial Analysis\
+- Market Trend Identification\
+- Operational Efficiency Optimization\
+- Inventory & Cost Management\
+- Process Improvement Strategies
+
+**Soft Skills**\
+- Problem-Solving & Critical Thinking\
+- Data-Driven Decision-Making\
+- Team Collaboration & Leadership\
+- Communication & Data Storytelling\
+- Workflow Optimization\
+- Customer Service & Stakeholder Engagement
+
+------------------------------------------------------------------------
+
+## Extra-Curricular Activities
+
+-   **Boy Scouts of America** - Eagle Scout, 4 Palms.
+-   **Civil Air Patrol** - Staff Sergeant.
